@@ -140,11 +140,15 @@
     ]
   },
   "dependencies": {
-    "swiper": "latest",
-    "handlebars": "latest",
-    "jquery": "latest",
+    "cloud9carousel": "^2.2.0",
+    "flickity": "latest",
+    "gsap": "^2.1.2",
+    "handlebars": "^4.7.3",
+    "ismobilejs": "^0.5.1",
+    "jquery": "^3.4.0",
     "navigo": "latest",
     "normalize.css": "latest",
-    "tingle.js": "^0.13.2"
+    "swiper": "^5.3.6",
+    "tingle.js": "latest"
   }
 }

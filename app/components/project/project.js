@@ -1,4 +1,7 @@
 import './utils/touch-device/touch-device';
+import './utils/delayed-attr/delayed-attr';
+
+
 // GUI
 import "./gui/gui";
 
