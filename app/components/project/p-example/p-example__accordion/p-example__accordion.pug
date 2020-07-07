@@ -1,0 +1,108 @@
+include ../../gui/accordion/accordion
+
+mixin p-example__accordion(content, params)
+  +p-example__page('Аккордеон').p-example__accordion&attributes(attributes)
+    h2 Контент в блоке
+    +accordion()
+      +accordion__item("Заголовок 1")(type="radio", name="accordion").
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare nisi dolor, a luctus magna mattis in.
+        Cras efficitur risus ut ligula viverra tristique. Nulla facilisi. Curabitur consequat malesuada leo. Curabitur
+        fermentum, lacus ac lacinia tempor, velit orci interdum metus, ac interdum ipsum nulla ac nibh. Quisque at
+        consequat sem, non pharetra nunc. Ut accumsan turpis sit amet massa pulvinar rutrum. Donec nec risus vitae enim
+        elementum tempor non et odio. Quisque est sem, pretium sed tincidunt in, posuere ac erat. Nulla facilisi.
+        Vivamus a metus dignissim, porttitor sem at, viverra justo. Suspendisse pharetra lobortis nisi at dapibus.
+
+      +accordion__item({title: "Заголовок 2"})(type="radio", name="accordion").
+        Pellentesque et nisi sem. Cras auctor feugiat risus sed elementum. Aenean a lectus imperdiet, lobortis dui nec,
+        viverra nulla. Sed non odio eu odio euismod varius ut ut ligula. In hac habitasse platea dictumst. Sed ultricies
+        maximus viverra. Praesent placerat nisi nec enim tempus, a accumsan risus imperdiet. Etiam commodo nulla vel
+        lobortis semper. Aenean suscipit sodales dapibus. Praesent porttitor mattis enim ut consequat. Morbi maximus
+        metus vel mauris cursus consectetur. Nunc id sagittis ipsum, semper pulvinar magna. Cras vel nisi nisi. Nulla
+        viverra molestie maximus. Etiam sodales velit vehicula, semper nisi ac, condimentum augue.
+
+      +accordion__item({title: "Заголовок 3", body: "Hello, world"})(type="radio", name="accordion")
+
+      +accordion__item("Вложенный аккордеон")(type="radio", name="accordion")
+        +accordion()
+          +accordion__item("Заголовок 1")(type="radio", name="accordion_1").
+            Тело 1
+          +accordion__item("Заголовок 2")(type="radio", name="accordion_1").
+            Тело 2
+
+    h2 Контент в параметрах
+    +accordion(
+      [
+        {
+          "title": "Заголовок",
+          "body": "<p>Аккордеон сгененированный с помощью свойства <i>accordion</i></p>",
+          "accordion": {
+            "content": [
+              {"title": "Заголовок", "body": "Тело"},
+              {"title": "Заголовок", "body": "Тело"},
+              {"title": "Заголовок", "body": "Тело"}
+            ],
+            "params": {
+              "type": "radio"
+            },
+            "attributes": {}
+          }
+        },
+        {"title": "Заголовок", "body": "Тело"},
+        {"title": "Заголовок", "body": "Тело"},
+        {
+          "title": "Заголовок",
+          "body": "<p>Аккордеон сгененированный с помощью свойства <i>mixin</i></p>",
+          "mixin": {
+            "name": "accordion",
+            "content": [
+              {"title": "Миксин", "body": "Тело"},
+              {"title": "Миксин", "body": "Тело"},
+              {"title": "Миксин", "body": "Тело"}
+            ],
+            "params": {
+              "type": "radio"
+            },
+            "attributes": {}
+          }
+        }
+      ],
+      {
+        type: "checkbox"
+      }
+    )
+
+    h2 Контент в Handlebars шаблоне
+    +template-engine('', {"nested": true}).p-example__accordion-template
+      +accordion(
+        {
+          "list": "items",
+          "item": {
+            "title": "{{title}}",
+            "body": "{{{body}}}",
+            "id":"{{accordion_id this}}",
+            "accordion": {
+              "condition": {
+                "before": "{{#if accordion}}{{#with accordion}}",
+                "after": "{{/with}}{{/if}}"
+              },
+              "content": {
+                "list": "items",
+                "item": {
+                  "title": "{{title}}",
+                  "body": "{{{body}}}",
+                  "id": "{{accordion_id this}}"
+                }
+              },
+              "params": {
+                "type": "{{../params.type}}",
+                "name": "{{../params.name}}"
+              }
+            }
+          }
+        },
+        {
+          "type": "{{../params.type}}",
+          "name": "{{../params.name}}"
+        }
+      )()
+    block

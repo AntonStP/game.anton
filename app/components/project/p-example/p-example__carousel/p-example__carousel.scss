@@ -1,0 +1,11 @@
+.p-example__carousel {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("p-example__carousel", $mod){
+      @content;
+    }
+    /*.p-example__carousel_#{$mod} & {
+      @content;
+    }*/
+  }
+}

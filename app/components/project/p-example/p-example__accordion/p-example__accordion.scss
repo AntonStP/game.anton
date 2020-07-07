@@ -1,0 +1,13 @@
+@import "../../gui/accordion/accordion";
+
+.p-example__accordion {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("p-example__accordion", $mod){
+      @content;
+    }
+    /*.p-example__accordion_#{$mod} & {
+      @content;
+    }*/
+  }
+}

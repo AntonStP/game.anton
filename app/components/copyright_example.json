@@ -1,0 +1,25 @@
+{
+  "@extend": "copyright.json",
+  "menu": [
+    {
+      "href": "/modal",
+      "label": "Модальные окна"
+    },
+    {
+      "href": "/accordion",
+      "label": "Аккордеон"
+    },
+    {
+      "href": "/carousel",
+      "label": "Карусель"
+    },
+    {
+      "href": "/forms",
+      "label": "Формы"
+    }
+  ],
+
+  "modal": {
+    "title": "Модальные окна"
+  }
+}

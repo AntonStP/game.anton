@@ -1,0 +1,18 @@
+mixin p-example__page(content, params)
+  .p-example__page&attributes(attributes)
+    case typeof content
+      when 'undefined'
+        -content = {}
+      when 'string'
+        -content = {title: content};
+
+    if content.title
+      h1.p-example__page-title!= content.title
+
+    if content.description
+      +pug-list(content.description, "p-example__page-desc")
+    block
+
+
+mixin p-example__page-desc(content, params)
+  p.p-example__page-desc!= content
