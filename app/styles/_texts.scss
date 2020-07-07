@@ -9,3 +9,142 @@
     font-size: 20px;
   }
 }
+
+/**
+ * Заголовок
+ */
+%INTRO-TITLE {
+  font-family: "robotobold";
+  @include option(font-size, 45, 36.2);
+  line-height: 1.25;
+  color: $WHITE;
+}
+
+%INTRO-SUM {
+  font-family: "robotobold";
+  @include option(font-size, 65, 52.4);
+  line-height: 1.25;
+  color: $WHITE;
+}
+
+%INTRO-SUBTITLE {
+  font-family: "robotobold";
+  @include option(font-size, 35, 36.2);
+  line-height: 1.2;
+  color: $WHITE;
+}
+
+%CARD-TITLE {
+  font-family: "robotoregular";
+  @include option(font-size, 18.1, 11);
+  line-height: 1.2;
+  color: $WHITE;
+}
+
+%CARD-SUM {
+  font-family: "robotomedium";
+  @include option(font-size, 29.7, 19);
+  line-height: 1;
+  color: $WHITE;
+}
+
+%CARD-TIME-T {
+  font-family: "robotoregular";
+  @include option(font-size, 16.1, 11);
+  line-height: 1.2;
+  color: $WHITE;
+}
+
+%CARD-TIME {
+  font-family: "robotoregular";
+  @include option(font-size, 27, 16);
+  line-height: 1.2;
+  color: $WHITE;
+}
+
+%CARD-COST {
+  font-family: "robotoregular";
+  @include option(font-size, 17.4, 11);
+  line-height: 1.1;
+  color: $WHITE;
+}
+
+/**
+ * Заголовок статистики
+ */
+%STATISTIC-TITLE {
+  font-family: "robotobold";
+  @include option(font-size, 42);
+  line-height: 1.2;
+  color: $BLACK;
+}
+
+%STATISTIC-ITEM {
+  font-family: "robotobold";
+  @include option(font-size, 16);
+  line-height: 1.3;
+  color: $BLACK;
+}
+
+%STATISTIC-ITEM-SPAN {
+  font-family: "robotoregular";
+  @include option(font-size, 16);
+  line-height: 1.3;
+  color: $BLACK;
+}
+
+%WINNERS-TITLE {
+  font-family: "robotoregular";
+  @include option(font-size, 42);
+  line-height: 1.2;
+  color: $YELLOW-W;
+}
+
+%WINNERS-TITLE {
+  font-family: "robotoregular";
+  @include option(font-size, 42);
+  line-height: 1.2;
+  color: $YELLOW-W;
+}
+
+%WINNERS-CARD-F {
+  font-family: "robotobold";
+  @include option(font-size, 10.7, 14.1);
+  line-height: 1.45;
+  color: $WHITE;
+}
+
+%WINNERS-CARD-TEXT {
+  font-family: "robotomedium";
+  @include option(font-size, 10.7, 14.1);
+  line-height: 1.45;
+  color: $WHITE;
+}
+%WINNERS-CARD-SUM {
+  font-family: "robotobold";
+  @include option(font-size, 29.5, 38.9);
+  line-height: 1.2;
+  color: $RED-W;
+}
+%WINNERS-CARD-ITEM {
+  font-family: "robotoregular";
+  @include option(font-size, 10.7, 14.1);
+  line-height: 1.2;
+  color: $WHITE;
+}
+
+%FOOTER-TEXT {
+  font-family: "robotoregular";
+  @include option(font-size, 10, 14);
+  line-height: 1.3;
+  color: $WHITE;
+}
+/**
+ * Кнопка
+ */
+%BUTTON {
+  font-family: "robotobold";
+  @include option(font-size, 21);
+  line-height: 0.85;
+  color: $WHITE;
+}
