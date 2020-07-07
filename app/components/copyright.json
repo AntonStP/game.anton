@@ -20,5 +20,100 @@
       "vk": "<?= $share->image['vk'] ?>",
       "tw": "<?= $share->image['tw'] ?>"
     }
+  },
+
+  "intro": {
+    "parallax": [
+      {
+        "src": "images/intro/item_1",
+        "srcM": "images/intro/item_1",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-1",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/intro/item_2",
+        "srcM": "images/1px",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-2",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/intro/item_3",
+        "srcM": "images/intro/item_3",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-3",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/intro/item_4",
+        "srcM": "images/intro/item_4-m",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-4",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/intro/chip_1",
+        "srcM": "images/intro/chip_1",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-5",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/intro/chip_2",
+        "srcM": "images/intro/chip_2",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "intro__item-6",
+          "data-parallax": ""
+        }
+      }
+    ],
+    "circle": {
+      "src": "images/intro/circle.svg",
+      "alt": "parallax-item",
+      "attr": {
+        "class": "intro__item-7",
+        "data-parallax": ""
+      }
+    },
+    "logo": {
+      "src": "images/intro/logo.svg",
+      "attr": {
+        "href": "#",
+        "data-mhref": "#",
+        "data-analytics": "",
+        "target": "_blank"
+      }
+    },
+    "title": "Выигрывайте<br/><span class='intro__sum'>15 000 000 ₽</span><br/> каждые 15 минут",
+    "mobile": {
+      "src": "images/intro/iphone",
+      "alt": "mobile"
+    },
+    "subtitle": "Попробуйте&nbsp;&mdash; цены от&nbsp;20&nbsp;рублей!",
+    "arrow": {
+      "href": "#"
+    },
+    "button": {
+      "text": "Купить билет",
+      "tag": "a",
+      "attr": {
+        "href": "#",
+        "data-mhref": "#",
+        "data-analytics": "",
+        "target": "_blank"
+      }
+    }
   }
 }
