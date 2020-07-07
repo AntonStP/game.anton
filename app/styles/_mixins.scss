@@ -75,3 +75,26 @@
     animation: $name $delay + $duration linear 0s infinite both;
   }
 }
+
+@mixin option($n, $v, $vm:$v, $vt:$vm){
+  @include DESKTOP{
+    #{$n}:vh($v);
+  }
+  @include TABLET-L{
+    #{$n}:vw($v);
+  }
+  @include MOBILE{
+    #{$n}:vw-m($vm);
+  }
+  @include TABLET{
+    #{$n}:vw-t($vt);
+  }
+}
+
+
+@mixin wrapper($wm:$WRAPPER-D-M){
+  @include option(width, $WRAPPER-D, $wm);
+  box-sizing: border-box;
+  padding: 0.1px 0;
+  margin: auto;
+}

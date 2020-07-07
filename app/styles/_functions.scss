@@ -163,6 +163,14 @@
   @return adaptive( $v, $DESIGN-W, 1vw);
 }
 
+@function vw-m($v){
+  @return adaptive( $v, $DESIGN-W-M, 1vw);
+}
+
+@function vw-t($v){
+  @return adaptive( $v, $DESIGN-W-M, 1vw*0.75);
+}
+
 @function vh-vw($v){
   @return adaptive( $v, $DESIGN-H $DESIGN-W, 1vh 1vw);
 }
