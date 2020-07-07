@@ -1,0 +1,33 @@
+mixin intro(content, params)
+  .intro&attributes(attributes)
+    +pug-list(content.parallax, "intro__parallax-item", params)
+    .intro__content
+      +intro__logo-cirle(content.circle)
+      +intro__logo(content.logo)
+      .intro__title !{content.title}
+      +button(content.button)
+      +intro__mobile(content.mobile)
+      .intro__try !{content.subtitle}
+      +intro__arrow(content.arrow)
+    block
+
+mixin intro__parallax-item(content, params)
+  .into__parallax-item&attributes(content.attr)&attributes(attributes)
+    picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px)"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+
+mixin intro__logo-cirle(content, params)
+  .intro__logo-cirle&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+
+mixin intro__logo(content, params)
+  a.intro__logo&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+
+mixin intro__mobile(content, params)
+  .intro__mobile&attributes(attributes)
+    picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.src+"-m.png 1x, "+content.src+"-m@2x.png 2x;(max-width: 1023px);"+content.src+"-m.webp 1x, "+content.src+"-m@2x.webp 2x;(max-width: 1023px)" data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+
+mixin intro__arrow(content, params)
+  a.intro__arrow&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+

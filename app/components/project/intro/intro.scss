@@ -1,0 +1,8 @@
+.intro {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("intro", $mod){
+      @content;
+    }
+  }
+}
