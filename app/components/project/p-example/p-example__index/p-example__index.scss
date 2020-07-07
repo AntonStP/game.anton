@@ -1,8 +1,0 @@
-.p-example__index {
-  // Константы
-  @mixin mod($mod) {
-    @include modifier("p-example__index", $mod){
-      @content;
-    }
-  }
-}

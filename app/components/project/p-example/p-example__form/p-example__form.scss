@@ -1,8 +1,0 @@
-.p-example__form {
-  // Константы
-  @mixin mod($mod) {
-    @include modifier("p-example__form", $mod){
-      @content;
-    }
-  }
-}
