@@ -5,4 +5,71 @@
       @content;
     }
   }
+
+  position: relative;
+
+  &__parallax-item {
+    position: absolute;
+    img {
+       height: 100%;
+    }
+  }
+
+  &__item-7 {
+    @include option(width, 821);
+    @include option(height, 806);
+    @include option(top, -656);
+    @include option(left, 147);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    @include wrapper;
+    @include option(padding, 31 0 0 0);
+
+
+  }
+
+  &__logo {
+    @include option(width, 175.46);
+    @include option(height, 36.16);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__title {
+    @extend %INTRO-TITLE;
+    @include option(margin, 158 0 0 0);
+  }
+
+  &__sum {
+    @extend %INTRO-SUM;
+  }
+
+  &__mobile {
+    position: absolute;
+    @include option(width, 377  );
+    @include option(height, 590);
+    @include option(top, 93);
+    @include option(right, 70);
+    img {
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      @include option(width, 448);
+      @include option(height, 448);
+      @include option(top, 88);
+      @include option(left, -19);
+      background: url("../images/intro/circle_bg.svg");
+
+    }
+  }
+
 }

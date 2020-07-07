@@ -16,14 +16,14 @@
 %INTRO-TITLE {
   font-family: "robotobold";
   @include option(font-size, 45, 36.2);
-  line-height: 1.25;
+  line-height: 1;
   color: $WHITE;
 }
 
 %INTRO-SUM {
   font-family: "robotobold";
   @include option(font-size, 65, 52.4);
-  line-height: 1.25;
+  line-height: 1.2;
   color: $WHITE;
 }
 
