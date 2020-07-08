@@ -1,3 +1,18 @@
 .button {
-  
+  @extend %BUTTON;
+  @include option(width, 265);
+  @include option(height, 60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #FFCD17 0%, #FD9346 29.69%, #FF5656 100%);
+  background-size: (100%,100%);
+  border-radius: 38px;
+  text-decoration: none;
+  transition: background .5s ease-in-out;
+  @include HOVER() {
+    &:hover {
+      background-size: (200%,300%)
+    }
+  }
 }

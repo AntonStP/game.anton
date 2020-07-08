@@ -1,3 +1,4 @@
-mixin button(tag)
-  #{tag || 'button'}.button&attributes(attributes)
+mixin button(content)
+  #{content.tag || 'button'}.button&attributes(content.attr)&attributes(attributes)
+    .button__text!=content.text
     block
