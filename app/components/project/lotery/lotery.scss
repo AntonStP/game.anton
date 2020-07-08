@@ -1,0 +1,8 @@
+.lotery {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("lotery", $mod){
+      @content;
+    }
+  }
+}
