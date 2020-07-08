@@ -1,0 +1,8 @@
+.stoloto-api {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("stoloto-api", $mod){
+      @content;
+    }
+  }
+}

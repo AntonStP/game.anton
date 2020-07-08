@@ -1,6 +1,7 @@
 import '../components/project/project';
 import {mobileLinksManager} from "../components/project/utils/mobileLinksManager";
 import {fixLinks, getBaseUrlParams} from "../components/project/utils/url";
+import StolotoApi from '../components/project/stoloto-api/StolotoApi';
 
 import $ from 'jquery';
 
@@ -12,6 +13,8 @@ $.when(isDocumentReady())
 function onDocumentReady() {
   if ($.fn.initPlugins) {
     $(document.body).initPlugins();
+
+    StolotoApi.update();
 
     // URL AND LINKS
     setTimeout(()=>{
@@ -32,3 +35,7 @@ function isDocumentReady() {
 
   return def.promise();
 }
+
+
+
+
