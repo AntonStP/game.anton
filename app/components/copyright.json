@@ -103,7 +103,10 @@
     },
     "subtitle": "Попробуйте&nbsp;&mdash; цены от&nbsp;20&nbsp;рублей!",
     "arrow": {
-      "href": "#"
+      "src": "images/intro/arrow.svg",
+      "attr": {
+        "href": "#"
+      }
     },
     "button": {
       "text": "Купить билет",

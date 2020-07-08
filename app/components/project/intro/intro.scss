@@ -10,9 +10,52 @@
 
   &__parallax-item {
     position: absolute;
+    z-index: $z_parallax;
     img {
-       height: 100%;
+      height: 100%;
     }
+  }
+
+  &__item-1 {
+    @include option(width, 77.91);
+    @include option(height, 77.91);
+    @include option(top, 356);
+    @include option(left, 335);
+  }
+
+  &__item-2 {
+     @include option(width, 110);
+     @include option(height, 110);
+     @include option(top, 630);
+     @include option(left, 475);
+  }
+
+  &__item-3 {
+    @include option(width, 145);
+    @include option(height, 145);
+    @include option(top, 548);
+    @include option(right, 630);
+  }
+
+  &__item-4 {
+    @include option(width, 180);
+    @include option(height, 190);
+    @include option(top, -3);
+    @include option(right, 330);
+  }
+
+  &__item-5 {
+    @include option(width, 111);
+    @include option(height, 114);
+    @include option(top, 351);
+    @include option(left, 951);
+  }
+
+  &__item-6 {
+    @include option(width, 82);
+    @include option(height, 78);
+    @include option(top, 318);
+    @include option(right, 634);
   }
 
   &__item-7 {
@@ -35,18 +78,26 @@
   &__logo {
     @include option(width, 175.46);
     @include option(height, 36.16);
+    position: relative;
+    display: block;
+    z-index: $z-parallax+1;
     img {
       height: 100%;
+      display: block;
     }
   }
 
   &__title {
     @extend %INTRO-TITLE;
-    @include option(margin, 158 0 0 0);
+    @include option(margin, 163 0 53 0);
   }
 
   &__sum {
     @extend %INTRO-SUM;
+  }
+
+  &__button {
+    @include option(margin, 0 0 213 0);
   }
 
   &__mobile {
@@ -68,8 +119,24 @@
       @include option(top, 88);
       @include option(left, -19);
       background: url("../images/intro/circle_bg.svg");
-
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
+  &__try {
+    @extend %INTRO-SUBTITLE;
+    @include option(margin, 0 0 15 0);
+    text-align: center;
+  }
+
+  &__arrow {
+    @include option(width, 31);
+    @include option(height, 41);
+    display: block;
+    margin: 0 auto;
+    svg {
+      height: 100%;
+    }
+  }
 }

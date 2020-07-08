@@ -5,7 +5,7 @@ mixin intro(content, params)
     .intro__content
       +intro__logo(content.logo)
       .intro__title !{content.title}
-      +button(content.button)
+      +button(content.button).intro__button
       +intro__mobile(content.mobile)
       .intro__try !{content.subtitle}
       +intro__arrow(content.arrow)
