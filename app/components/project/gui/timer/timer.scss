@@ -5,4 +5,35 @@
       @content;
     }
   }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    img {
+      height: 100%;
+    }
+  }
+
+  &__text {
+    @extend %CARD-TEXT;
+    @include option(margin, 14 0 30 0);
+    text-align: center;
+  }
+
+  &__sum {
+    @extend %CARD-SUM;
+  }
+
+  &__title {
+    @extend %CARD-TIME-T;
+  }
+
+
+
 }

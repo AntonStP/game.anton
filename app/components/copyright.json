@@ -161,7 +161,11 @@
     ],
     "list": [
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/rapido.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>200 000 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "rapido|draw.date|countdown|{{zero-first days}}",
           "text": "rapido|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -179,10 +183,17 @@
           "value": "rapido|draw.date|countdown|{{zero-first seconds}}",
           "text": "rapido|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|rapido|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-rapido"
         }
       },
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/rapido2.0.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>900 000 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "rapido2|draw.date|countdown|{{zero-first days}}",
           "text": "rapido2|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -200,10 +211,17 @@
           "value": "rapido2|draw.date|countdown|{{zero-first seconds}}",
           "text": "rapido2|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|rapido2|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-rapido20"
         }
       },
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/top3.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>15 000 000 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "top3|draw.date|countdown|{{zero-first days}}",
           "text": "top3|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -221,10 +239,17 @@
           "value": "top3|draw.date|countdown|{{zero-first seconds}}",
           "text": "top3|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|top3|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-top3"
         }
       },
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/12x24.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>2 256 170 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "12x24|draw.date|countdown|{{zero-first days}}",
           "text": "12x24|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -242,10 +267,17 @@
           "value": "12x24|draw.date|countdown|{{zero-first seconds}}",
           "text": "12x24|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|12x24|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-12x24"
         }
       },
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/duel.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "duel|draw.date|countdown|{{zero-first days}}",
           "text": "duel|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -263,10 +295,17 @@
           "value": "duel|draw.date|countdown|{{zero-first seconds}}",
           "text": "duel|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|duel|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-duel"
         }
       },
       {
-        "title": "До розыгрыша осталось:",
+        "logo": {
+          "src": "images/lotery/keno.svg"
+        },
+        "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
+        "title": "Осталось до тиража:",
         "days": {
           "value": "keno|draw.date|countdown|{{zero-first days}}",
           "text": "keno|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -284,6 +323,9 @@
           "value": "keno|draw.date|countdown|{{zero-first seconds}}",
           "text": "keno|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
           "hide": "@hide|keno|draw.date|days"
+        },
+        "attr": {
+          "class": "lotery__timer lotery__timer-keno"
         }
       }
     ]

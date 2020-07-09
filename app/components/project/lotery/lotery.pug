@@ -1,10 +1,10 @@
 mixin lotery(content, params)
   .lotery&attributes(attributes)
+    +pug-list(content.parallax, "lotery__parallax-item", params)
     .lotery__content
-
+      +pug-list(content.list, "timer", params)
     block
 
 mixin lotery__parallax-item(content, params)
   .lotery__parallax-item&attributes(content.attr)&attributes(attributes)
     picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px)"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
-

@@ -5,8 +5,12 @@ mixin timer(content, params)
     if(!content.minutes) content.minutes = {};
   // if(!content.seconds) content.seconds = {};
 
-  .timer&attributes(assign( content.attributes||{}, attributes||{}))
+  .timer&attributes(assign( content.attr||{}, attributes||{}))
     .timer__block
+      .timer__logo
+        img(data-delayed-attr="src|"+content.logo.src data-delayed-attr-delay="400|2000" style="visibility:hidden" alt="logo")
+      if content.text
+        .timer__text!=content.text
       if content.title
         .timer__title!=content.title
       .timer__list

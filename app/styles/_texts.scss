@@ -34,7 +34,7 @@
   color: $WHITE;
 }
 
-%CARD-TITLE {
+%CARD-TEXT {
   font-family: "robotoregular";
   @include option(font-size, 18.1, 11);
   line-height: 1.2;
