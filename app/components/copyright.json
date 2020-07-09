@@ -118,5 +118,176 @@
         "target": "_blank"
       }
     }
+  },
+
+  "lotery": {
+    "parallax": [
+      {
+        "src": "images/lotery/item_1",
+        "srcM": "images/1px",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "lotery__item-1",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/lotery/item_2",
+        "srcM": "images/1px",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "lotery__item-2",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/lotery/item_3",
+        "srcM": "images/1px",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "lotery__item-3",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/lotery/item_4",
+        "srcM": "images/1px",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "lotery__item-4",
+          "data-parallax": ""
+        }
+      }
+    ],
+    "list": [
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "rapido|draw.date|countdown|{{zero-first days}}",
+          "text": "rapido|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|rapido|draw.date|days"
+        },
+        "hours": {
+          "value": "rapido|draw.1594197450|countdown|{{zero-first hours}}",
+          "text": "rapido|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "rapido|draw.date|countdown|{{zero-first minutes}}",
+          "text": "rapido|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "rapido|draw.date|countdown|{{zero-first seconds}}",
+          "text": "rapido|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|rapido|draw.date|days"
+        }
+      },
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "rapido2|draw.date|countdown|{{zero-first days}}",
+          "text": "rapido2|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|rapido2|draw.date|days"
+        },
+        "hours": {
+          "value": "rapido2|draw.date|countdown|{{zero-first hours}}",
+          "text": "rapido2|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "rapido2|draw.date|countdown|{{zero-first minutes}}",
+          "text": "rapido2|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "rapido2|draw.date|countdown|{{zero-first seconds}}",
+          "text": "rapido2|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|rapido2|draw.date|days"
+        }
+      },
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "top3|draw.date|countdown|{{zero-first days}}",
+          "text": "top3|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|top3|draw.date|days"
+        },
+        "hours": {
+          "value": "top3|draw.date|countdown|{{zero-first hours}}",
+          "text": "top3|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "top3|draw.date|countdown|{{zero-first minutes}}",
+          "text": "top3|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "top3|draw.date|countdown|{{zero-first seconds}}",
+          "text": "top3|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|top3|draw.date|days"
+        }
+      },
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "12x24|draw.date|countdown|{{zero-first days}}",
+          "text": "12x24|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|12x24|draw.date|days"
+        },
+        "hours": {
+          "value": "12x24|draw.date|countdown|{{zero-first hours}}",
+          "text": "12x24|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "12x24|draw.date|countdown|{{zero-first minutes}}",
+          "text": "12x24|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "12x24|draw.date|countdown|{{zero-first seconds}}",
+          "text": "12x24|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|12x24|draw.date|days"
+        }
+      },
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "duel|draw.date|countdown|{{zero-first days}}",
+          "text": "duel|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|duel|draw.date|days"
+        },
+        "hours": {
+          "value": "duel|draw.date|countdown|{{zero-first hours}}",
+          "text": "duel|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "duel|draw.date|countdown|{{zero-first minutes}}",
+          "text": "duel|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "duel|draw.date|countdown|{{zero-first seconds}}",
+          "text": "duel|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|duel|draw.date|days"
+        }
+      },
+      {
+        "title": "До розыгрыша осталось:",
+        "days": {
+          "value": "keno|draw.date|countdown|{{zero-first days}}",
+          "text": "keno|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
+          "hide": "@show|keno|draw.date|days"
+        },
+        "hours": {
+          "value": "keno|draw.date|countdown|{{zero-first hours}}",
+          "text": "keno|draw.date|countdown|{{get-end hours 'час' 'часа' 'часов'}}"
+        },
+        "minutes": {
+          "value": "keno|draw.date|countdown|{{zero-first minutes}}",
+          "text": "keno|draw.date|countdown|{{get-end minutes 'минута' 'минуты' 'минут'}}"
+        },
+        "seconds": {
+          "value": "keno|draw.date|countdown|{{zero-first seconds}}",
+          "text": "keno|draw.date|countdown|{{get-end seconds 'секунда' 'секунды' 'секунд'}}",
+          "hide": "@hide|keno|draw.date|days"
+        }
+      }
+    ]
+
   }
+
 }

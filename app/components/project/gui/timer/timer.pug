@@ -1,0 +1,33 @@
+mixin timer(content, params)
+
+  -
+    if(!content.hours) content.hours = {};
+    if(!content.minutes) content.minutes = {};
+  // if(!content.seconds) content.seconds = {};
+
+  .timer&attributes(assign( content.attributes||{}, attributes||{}))
+    .timer__block
+      if content.title
+        .timer__title!=content.title
+      .timer__list
+        if(content.days)
+          .timer__item(data-stoloto-api=content.days.hide style="display:none;")
+            .timer__item-index(data-stoloto-api=content.days.value) 00
+            //-.timer__item-text(data-stoloto-api=content.days.text)
+          .timer__item.timer__item_points(data-stoloto-api=content.days.hide style="display:none;") :
+
+        .timer__item(data-stoloto-api=content.hours.hide)
+          .timer__item-index(data-stoloto-api=content.hours.value) 00
+          //-.timer__item-text(data-stoloto-api=content.hours.text)
+
+        .timer__item.timer__item_points(data-stoloto-api=content.minutes.hide) :
+        .timer__item(data-stoloto-api=content.minutes.hide)
+          .timer__item-index(data-stoloto-api=content.minutes.value) 00
+          //-.timer__item-text(data-stoloto-api=content.minutes.text)
+
+        if(content.seconds)
+          .timer__item.timer__item_points(data-stoloto-api=content.seconds.hide) :
+          .timer__item(data-stoloto-api=content.seconds.hide)
+            .timer__item-index(data-stoloto-api=content.seconds.value) 00
+            //-.timer__item-text(data-stoloto-api=content.seconds.text)
+      .timer__subtitle Успей выиграть!

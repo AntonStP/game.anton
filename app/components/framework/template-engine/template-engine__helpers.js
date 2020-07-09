@@ -6,7 +6,6 @@ import toFixed from "../utils/to-fixed";
 // import Typograf from 'Typograf';
 
 initHelpers({
-  date,
   number,
   getEnd,
   templateEngine,
@@ -19,7 +18,9 @@ initHelpers({
   sequence,
   switch: switch_switch,
   case: switch_case,
-  default: switch_default
+  default: switch_default,
+  zeroFirst,
+  notEmpty
   // typograf: initTypograf(Typograf)
 });
 
@@ -36,7 +37,7 @@ function initHelpers(obj) {
  * @return {string}
  */
 function number(floor, val) {
-  const SEP = "&nbsp;";
+  const SEP = " ";
 
   if (arguments.length === 2) {
     val = parseFloat(floor);
@@ -77,7 +78,6 @@ function getEnd(val, end1, end2, end3, info) {
         : ""
     );
   }
-
   return _getEnd(args[0] || 0, args.slice(1, 4));
 }
 
@@ -221,6 +221,23 @@ function switch_default(options) {
   }
 }
 
+function _zeroFirst( value, digits ){
+  if( typeof digits !== 'number' ) digits = 2;
+  value = (''+value);
+  return '000000000000000000'.substr(0, digits - value.length ) + value;
+}
+
+function zeroFirst( value, options ){
+  const hash = (options || {}).hash || {};
+  return _zeroFirst( value, hash.digits );
+}
+
+//
+function notEmpty( val, suffix){
+  if( val ) return val+suffix;
+  return '';
+}
+
 /* Handlebars.registerHelper('closest', function (param, options) {
   let res;
   let info = options.data.root;
@@ -232,6 +249,7 @@ function switch_default(options) {
   return res;
 }); */
 
+/*
 function initTypograf(Typograf) {
   if (typeof Typograf === "function") {
     const typograf = new Typograf({
@@ -249,37 +267,4 @@ function initTypograf(Typograf) {
     };
   }
 }
-
-
-const dateFormat = (function() {
-  const MM = [
-    "января",
-    "февраля",
-    "марта",
-    "апреля",
-    "мая",
-    "июня",
-    "июля",
-    "августа",
-    "сентября",
-    "октября",
-    "ноября",
-    "декабря"
-  ];
-  return {
-    dd: d => d.getDate(),
-    MM: d => MM[d.getMonth()],
-    YYYY: d => d.getFullYear()
-  }
-}());
-
-function date(...args) {
-  const obj = args.pop();
-  const d = new Date(args.shift() * 1000);
-  const tpl = args.shift();
-  if (tpl) {
-    return tpl.replace(/dd|MM|YYYY/g, $0 => dateFormat[$0](d));
-  }
-
-  return d.toLocaleDateString("ru-RU", {day: "numeric", month: "long", year: "numeric"});
-}
+ */

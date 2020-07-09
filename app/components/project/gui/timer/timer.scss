@@ -1,0 +1,8 @@
+.timer {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("timer", $mod){
+      @content;
+    }
+  }
+}
