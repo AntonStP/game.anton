@@ -99,5 +99,23 @@
     }
   }
 
+  &__button {
+    @extend %CARD-TEXT;
+    @include option(width, 191.78);
+    @include option(height, 45.42);
+    @include option(margin, 50 0 0 0);
+    @include option(border-radius, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'robotoregular';
+    background: #7DD22B;
+    @include HOVER() {
+      &:hover {
+        background: #e0b716;
+      }
+    }
+  }
+
 
 }

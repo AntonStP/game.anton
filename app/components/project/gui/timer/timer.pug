@@ -5,7 +5,7 @@ mixin timer(content, params)
     if(!content.minutes) content.minutes = {};
   // if(!content.seconds) content.seconds = {};
 
-  .timer&attributes(assign( content.attr||{}, attributes||{}))
+  a.timer&attributes(assign( content.attr||{}, attributes||{}))
     .timer__block
       .timer__logo
         img(data-delayed-attr="src|"+content.logo.src data-delayed-attr-delay="400|2000" style="visibility:hidden" alt="logo")
@@ -20,12 +20,12 @@ mixin timer(content, params)
             //-.timer__item-text(data-stoloto-api=content.days.text)
           .timer__item.timer__item_points(data-stoloto-api=content.days.hide style="display:none;") :
 
-        .timer__item(data-stoloto-api=content.hours.hide)
-          .timer__item-index(data-stoloto-api=content.hours.value) 00
-          //-.timer__item-text(data-stoloto-api=content.hours.text)
+        //.timer__item(data-stoloto-api=content.hours.hide)
+        //  .timer__item-index(data-stoloto-api=content.hours.value) 00
+        //  //-.timer__item-text(data-stoloto-api=content.hours.text)
 
-        .timer__item.timer__item_points(data-stoloto-api=content.minutes.hide) :
-        .timer__item(data-stoloto-api=content.minutes.hide)
+        //.timer__item.timer__item_points(data-stoloto-api=content.minutes.hide) :
+        .timer__item(data-stoloto-api=content.minutes.hide).timer__item-minutes
           .timer__item-index(data-stoloto-api=content.minutes.value) 00
           //-.timer__item-text(data-stoloto-api=content.minutes.text)
 
@@ -34,4 +34,9 @@ mixin timer(content, params)
           .timer__item(data-stoloto-api=content.seconds.hide)
             .timer__item-index(data-stoloto-api=content.seconds.value) 00
             //-.timer__item-text(data-stoloto-api=content.seconds.text)
-      .timer__subtitle Успей выиграть!
+      if content.subtitle
+        .timer__subtitle!=content.subtitle
+
+      .lotery__button !{content.button.text}
+
+      .timer__label

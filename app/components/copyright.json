@@ -166,6 +166,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>200 000 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 50 ₽",
         "days": {
           "value": "rapido|draw.date|countdown|{{zero-first days}}",
           "text": "rapido|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -185,7 +186,13 @@
           "hide": "@hide|rapido|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-rapido"
+          "class": "lotery__timer lotery__timer-rapido","href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       },
       {
@@ -194,6 +201,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>900 000 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 60 ₽",
         "days": {
           "value": "rapido2|draw.date|countdown|{{zero-first days}}",
           "text": "rapido2|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -213,7 +221,13 @@
           "hide": "@hide|rapido2|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-rapido20"
+          "class": "lotery__timer lotery__timer-rapido20","href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       },
       {
@@ -222,6 +236,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>15 000 000 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 60 ₽",
         "days": {
           "value": "top3|draw.date|countdown|{{zero-first days}}",
           "text": "top3|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -241,7 +256,13 @@
           "hide": "@hide|top3|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-top3"
+          "class": "lotery__timer lotery__timer-top3","href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       },
       {
@@ -250,6 +271,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>2 256 170 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 60 ₽",
         "days": {
           "value": "12x24|draw.date|countdown|{{zero-first days}}",
           "text": "12x24|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -269,7 +291,13 @@
           "hide": "@hide|12x24|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-12x24"
+          "class": "lotery__timer lotery__timer-12x24","href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       },
       {
@@ -278,6 +306,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 30 ₽",
         "days": {
           "value": "duel|draw.date|countdown|{{zero-first days}}",
           "text": "duel|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -297,7 +326,13 @@
           "hide": "@hide|duel|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-duel"
+          "class": "lotery__timer lotery__timer-duel","href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       },
       {
@@ -306,6 +341,7 @@
         },
         "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
         "title": "Осталось до тиража:",
+        "subtitle": "Билет от 10 ₽",
         "days": {
           "value": "keno|draw.date|countdown|{{zero-first days}}",
           "text": "keno|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -325,7 +361,14 @@
           "hide": "@hide|keno|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-keno"
+          "class": "lotery__timer lotery__timer-keno",
+          "href": "#",
+          "data-mhref": "#",
+          "data-analytics": "",
+          "target": "_blank"
+        },
+        "button": {
+          "text": "Купить"
         }
       }
     ]

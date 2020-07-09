@@ -6,15 +6,31 @@
     }
   }
 
+
+  text-decoration: none;
+  transition: rotateZ 1.5s ease-in-out;
+  @include HOVER() {
+    &:hover {
+      .timer__label {
+        transform: rotateZ(10deg);
+      }
+      .timer__logo {
+        transform: translateY(-20%);
+      }
+    }
+  }
+
   &__block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     width: 100%;
     height: 100%;
   }
 
   &__logo {
+    transition: transform .4s ease-in-out;
     img {
       height: 100%;
     }
@@ -34,6 +50,31 @@
     @extend %CARD-TIME-T;
   }
 
+  &__list {
+    display: flex;
+    @include option(margin, 3 0 11 0);
+  }
+
+  &__item {
+    @extend %CARD-TIME;
+  }
+
+  &__subtitle {
+    @extend %CARD-TEXT;
+  }
+
+  &__label {
+    position: absolute;
+    @include option(top, 215);
+    @include option(left, -17);
+    @include option(width, 226);
+    @include option(height, 112);
+    transform-origin: 0% 0%;
+    background: url("../images/lotery/label-full.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform .4s ease-in-out;
+  }
 
 
 }
