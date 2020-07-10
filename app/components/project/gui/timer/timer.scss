@@ -38,12 +38,13 @@
 
   &__text {
     @extend %CARD-TEXT;
-    @include option(margin, 14 0 30 0);
+    @include option(margin, 14 0 10 0);
     text-align: center;
   }
 
   &__sum {
     @extend %CARD-SUM;
+    @include option(margin, 0 0 13 0);
   }
 
   &__title {
@@ -60,7 +61,7 @@
   }
 
   &__subtitle {
-    @extend %CARD-TEXT;
+    @extend %CARD-COST;
   }
 
   &__label {
@@ -74,6 +75,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform .4s ease-in-out;
+  }
+
+  &__label-prize {
+    @extend %CARD-COST;
+    position: absolute;
+    @include option(top, 59);
+    @include option(left, 70);
+    transform: rotateZ(13.5deg);
   }
 
 

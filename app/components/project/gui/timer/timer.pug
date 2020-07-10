@@ -11,6 +11,8 @@ mixin timer(content, params)
         img(data-delayed-attr="src|"+content.logo.src data-delayed-attr-delay="400|2000" style="visibility:hidden" alt="logo")
       if content.text
         .timer__text!=content.text
+      if content.sum
+        .timer__sum&attributes(content.sum.attr)&attributes(attributes)
       if content.title
         .timer__title!=content.title
       .timer__list
@@ -40,3 +42,4 @@ mixin timer(content, params)
       .lotery__button !{content.button.text}
 
       .timer__label
+        .timer__label-prize&attributes(content.labelPrize.attr)&attributes(attributes)

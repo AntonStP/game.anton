@@ -164,9 +164,19 @@
         "logo": {
           "src": "images/lotery/rapido.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>200 000 ₽</span>",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "rapido|draw.superPrize|| {{number value}} ₽"
+          }
+        },
         "title": "Осталось до тиража:",
         "subtitle": "Билет от 50 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "rapido|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "rapido|draw.date|countdown|{{zero-first days}}",
           "text": "rapido|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -199,9 +209,19 @@
         "logo": {
           "src": "images/lotery/rapido2.0.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>900 000 ₽</span>",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "rapido2|draw.superPrize|| {{number value}} ₽"
+          }
+        },
         "title": "Осталось до тиража:",
         "subtitle": "Билет от 60 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "rapido2|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "rapido2|draw.date|countdown|{{zero-first days}}",
           "text": "rapido2|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -234,9 +254,18 @@
         "logo": {
           "src": "images/lotery/top3.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>15 000 000 ₽</span>",
-        "title": "Осталось до тиража:",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "top3|draw.superPrize|| {{number value}} ₽"
+          }
+        },        "title": "Осталось до тиража:",
         "subtitle": "Билет от 60 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "top3|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "top3|draw.date|countdown|{{zero-first days}}",
           "text": "top3|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -269,9 +298,19 @@
         "logo": {
           "src": "images/lotery/12x24.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>2 256 170 ₽</span>",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "12x24|draw.superPrize|| {{number value}} ₽"
+          }
+        },
         "title": "Осталось до тиража:",
         "subtitle": "Билет от 60 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "12x24|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "12x24|draw.date|countdown|{{zero-first days}}",
           "text": "12x24|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -304,9 +343,19 @@
         "logo": {
           "src": "images/lotery/duel.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "duel|draw.superPrize|| {{number value}} ₽"
+          }
+        },
         "title": "Осталось до тиража:",
         "subtitle": "Билет от 30 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "duel|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "duel|draw.date|countdown|{{zero-first days}}",
           "text": "duel|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
@@ -339,9 +388,19 @@
         "logo": {
           "src": "images/lotery/keno.svg"
         },
-        "text": "Суперприз<br /><span class='timer__sum'>370 050 ₽</span>",
+        "text": "Суперприз",
+        "sum": {
+          "attr": {
+            "data-stoloto-api": "keno|draw.superPrize|| {{number value}} ₽"
+          }
+        },
         "title": "Осталось до тиража:",
         "subtitle": "Билет от 10 ₽",
+        "labelPrize": {
+          "attr": {
+            "data-stoloto-api": "keno|draw.betCost|| Билеты от {{number value}} ₽"
+          }
+        },
         "days": {
           "value": "keno|draw.date|countdown|{{zero-first days}}",
           "text": "keno|draw.date|countdown|{{get-end days 'день' 'дня' 'дней'}}",
