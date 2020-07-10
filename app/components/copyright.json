@@ -488,6 +488,213 @@
       }
     ],
     "src": "images/statistic/icon.svg"
+  },
+
+  "winners": {
+    "parallax": [
+      {
+        "src": "images/winners/item_1",
+        "srcM": "images/winners/item_1",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-1",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_2",
+        "srcM": "images/winners/item_2",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-2",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_3",
+        "srcM": "images/winners/item_3",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-3",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_4",
+        "srcM": "images/winners/item_4",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-4",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_5",
+        "srcM": "images/winners/item_5",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-5",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_6",
+        "srcM": "images/winners/item_6",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-6",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_7",
+        "srcM": "images/winners/item_7",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-7",
+          "data-parallax": ""
+        }
+      },
+      {
+        "src": "images/winners/item_8",
+        "srcM": "images/winners/item_8",
+        "alt": "parallax-item",
+        "attr": {
+          "class": "winners__item-8",
+          "data-parallax": ""
+        }
+      }
+    ],
+    "title": "Наши победители",
+    "carouselItems": [
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 001 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 002 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 003 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 004 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 005 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 006 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 007 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 008 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 009 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 010 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 011 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 012 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      },
+      {
+        "src": "images/winners/photo",
+        "family": "Бледновых",
+        "sum": "506 000 013 ₽",
+        "map": "images/winners/map.svg",
+        "mapT": "Воронежская область",
+        "date": "images/winners/date.svg",
+        "dateT": "5 ноября 2017"
+      }
+    ],
+    "button": {
+      "text": "Стать следующим",
+      "tag": "a",
+      "attr": {
+        "href": "#",
+        "data-mhref": "#",
+        "data-analytics": "",
+        "target": "_blank"
+      }
+    }
   }
 
 }
