@@ -1,0 +1,21 @@
+mixin statistic(content, params)
+  .statistic&attributes(attributes)
+    .statistic__bg
+      +statistic__icon(content.src)
+    .statistic__content
+      .statistic__title !{content.title}
+      .statistic__data
+        +pug-list(content.list, "statistic__item", params)
+    block
+
+mixin statistic__item(content,params)
+  .statistic__item&attributes(content.attr)&attributes(attributes)
+    .statistic__item-pic
+      img(data-delayed-attr="src|" + content.src data-delayed-attr-delay="500|3000" style="visibility:hidden" alt="statistic-pic")
+    .statistic__text
+      .statistic__item-textB !{content.textB}
+      .statistic__item-textN !{content.textN}
+
+mixin statistic__icon(content, params)
+  .statistic__icon
+    img(data-delayed-attr="src| images/statistic/icon.svg" data-delayed-attr-delay="500|3000" style="visibility:hidden" alt="statistic-pic")

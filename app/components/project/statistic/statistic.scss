@@ -1,0 +1,104 @@
+.statistic {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("statistic", $mod){
+      @content;
+    }
+  }
+
+  position: relative;
+
+  &__bg {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    @include option(width, 2039);
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      @include option(width, 1129);
+      @include option(height, 1129);
+      @include option(top, -203);
+      left: 50%;
+      transform: translate(-50%,0);
+      border-radius: 50%;
+      background: #FBD850;
+      background: linear-gradient(217.7deg, rgba(255, 196, 45, 0) 8.02%, #FFAB48 89.98%), #FBD850;;
+
+    }
+  }
+
+  &__content {
+    @include wrapper;
+    @include option(padding, 65 0 0 0);
+  }
+
+  &__title {
+    @extend %STATISTIC-TITLE;
+  }
+
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+    @include option(width, 920);
+    @include option(margin, 73 0 0 0);
+    @include option(padding, 0 0 0 7);
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    @include option(width, 420);
+    @include option(height, 174);
+    @include option(margin, 0 38 0 0);
+
+  }
+
+  &__item-4 {
+    .statistic__item-textB {
+      @extend %STATISTIC-ITEM-N;
+    }
+    .statistic__item-textN {
+      @extend %STATISTIC-ITEM-B;
+    }
+  }
+
+  &__item-5 {
+    justify-self: flex-end;
+    @include option(margin, 0 0 0 458);
+  }
+
+  &__item-pic {
+    @include option(width, 82);
+    @include option(height, 82);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__text {
+    @include option(padding, 0 0 0 39);
+  }
+
+  &__item-textB {
+    @extend %STATISTIC-ITEM-B;
+    @include option(margin, 0 0 11 0);
+  }
+
+  &__item-textN {
+    @extend %STATISTIC-ITEM-N;
+  }
+
+  &__icon {
+    position: absolute;
+    @include option(top, 614);
+    @include option(left, 550);
+    @include option(width, 255);
+    @include option(height, 255);
+    z-index: 1;
+  }
+
+
+}
