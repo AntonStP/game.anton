@@ -5,4 +5,205 @@
       @content;
     }
   }
+
+  position: relative;
+
+  &__bg {
+    @include option(width, 2239);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  &__parallax-item {
+    position: absolute;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__item-1 {
+    @include option(top, 440);
+    @include option(left, 183);
+    @include option(width, 98);
+    @include option(height, 98);
+  }
+
+  &__item-2 {
+    @include option(top, 293);
+    @include option(left, 500);
+    @include option(width, 82);
+    @include option(height, 86);
+  }
+
+  &__item-3 {
+    @include option(top, 611);
+    @include option(left, 500);
+    @include option(width, 78);
+    @include option(height, 70);
+  }
+
+  &__item-4 {
+    @include option(top, 746);
+    @include option(left, 840);
+    @include option(width, 41);
+    @include option(height, 40);
+  }
+
+  &__item-5 {
+    @include option(top, 803);
+    @include option(right, 640);
+    @include option(width, 145);
+    @include option(height, 160);
+  }
+
+  &__item-6 {
+    @include option(top, 230);
+    @include option(right, 490);
+    @include option(width, 75);
+    @include option(height, 99);
+  }
+
+  &__item-7 {
+    @include option(top, 564);
+    @include option(right, 472);
+    @include option(width, 76);
+    @include option(height, 83);
+  }
+
+  &__item-8 {
+    @include option(top, 333);
+    @include option(right, 239);
+    @include option(width, 40);
+    @include option(height, 40);
+  }
+
+  &__content {
+    @include wrapper;
+    @include option(padding, 203 0 0 0);
+  }
+
+  &__title {
+    @extend %WINNERS-TITLE;
+    @include option(margin, 0 0 75 0);
+    text-align: center;
+  }
+
+  .winners__carousel-btn {
+    position: absolute;
+    @include option(top, 505);
+    @include option(width, 11);
+    @include option(height, 20);
+    background: url("../images/winners/arrow.svg");
+    background-repeat: no-repeat;
+    //background-size: cover;
+    z-index: 22;
+    @include HOVER() {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__btn-prev {
+    @include option(left, 40);
+  }
+
+  &__btn-next {
+    @include option(right, 40);
+    transform: rotateY(180deg);
+  }
+
+  &__carousel {
+    @include option(width, 705);
+    @include option(height, 505);
+
+    .swiper-slide-active {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1.18) translate(0, 26%);
+    }
+
+  }
+
+  &__carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include option(width, 235);
+    @include option(height, 330);
+    @include option(padding, 24 0 0 0);
+    box-sizing: border-box;
+    background: #00BCA8;
+    background: linear-gradient(180deg, #D483E1 29.34%, #00BCA8 100%);
+    opacity: 0.5;
+    transition: .4s ease-in-out;
+  }
+
+  &__item-photo {
+    @include option(width, 104);
+    @include option(height, 102);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__item-family {
+    @extend %WINNERS-FAMILY;
+    @include option(margin, 14 0 3 0);
+    @include option(letter-spacing, 0.8);
+    text-transform: uppercase;
+  }
+
+  &__item-wins {
+    @extend %WINNERS-W;
+    text-transform: uppercase;
+    @include option(letter-spacing, 0.8);
+  }
+
+  &__item-sum {
+    @extend %WINNERS-SUM;
+    @include option(width, 222.76);
+    @include option(height, 43.84);
+    @include option(margin, 9 0 18 0);
+    @include option(padding, 5 0);
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(90.26deg, #FF6A29 0.07%, #ED3838 97.89%);
+    @include option(border-radius, 22 22 22 5);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  &__item-point {
+    @extend %WINNERS-ITEM;
+    display: flex;
+    align-items: center;
+    @include option(margin, 0 0 12 0);
+
+  }
+
+  &__region-icon {
+    @include option(width, 12.59);
+    @include option(height, 19.85);
+    @include option(padding, 0 15 0 2);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__date-icon {
+    @include option(width, 19.96);
+    @include option(height, 19.94);
+    @include option(padding, 0 10 0 0);
+    img {
+     height: 100%;
+    }
+  }
+
+  &__button {
+    @include option(margin, 23 auto 0);
+  }
+
 }

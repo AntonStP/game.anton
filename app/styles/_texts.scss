@@ -107,26 +107,27 @@
   color: $YELLOW-W;
 }
 
-%WINNERS-CARD-F {
+%WINNERS-FAMILY {
   font-family: "robotobold";
   @include option(font-size, 10.7, 14.1);
   line-height: 1.45;
   color: $WHITE;
 }
 
-%WINNERS-CARD-TEXT {
+%WINNERS-W {
   font-family: "robotomedium";
   @include option(font-size, 10.7, 14.1);
   line-height: 1.45;
   color: $WHITE;
 }
-%WINNERS-CARD-SUM {
+
+%WINNERS-SUM {
   font-family: "robotobold";
   @include option(font-size, 29.5, 38.9);
   line-height: 1.2;
   color: $RED-W;
 }
-%WINNERS-CARD-ITEM {
+%WINNERS-ITEM {
   font-family: "robotoregular";
   @include option(font-size, 10.7, 14.1);
   line-height: 1.2;

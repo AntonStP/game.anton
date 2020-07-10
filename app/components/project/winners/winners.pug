@@ -1,3 +1,33 @@
 mixin winners(content, params)
   .winners&attributes(attributes)
+    .winners__bg
+      +pug-list(content.parallax, "winners__parallax-item", params)
+    .winners__content
+      .winners__title !{content.title}
+      +carousel(content.carouselItems, {mixin: "winners__carousel-item"}).winners__carousel
+      .winners__carousel-btn.winners__btn-next.swiper-button-next
+      .winners__carousel-btn.winners__btn-prev.swiper-button-prev
+      +button(content.button).winners__button
     block
+
+mixin winners__parallax-item(content, params)
+  .winners__parallax-item&attributes(content.attr)&attributes(attributes)
+    picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px)"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="400|4000" style="visibility:hidden" alt=content.alt)
+
+mixin winners__carousel-item(content,params)
+  .winners__carousel-item&attributes(attributes)
+    .winners__item-photo
+      picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.src+"-m.png;(max-width: 1023px)"+content.src+"-m.webp;(max-width: 1023px)" data-delayed-attr-delay="400|4000" style="visibility:hidden" alt=content.alt)
+    .winners__item-family семья !{content.family}
+    .winners__item-wins выиграла
+    .winners__item-sum !{content.sum}
+    .winners__data-wrapper
+      .winners__item-point.winners__item-region
+        .winners__region-icon
+          img(data-delayed-attr="src|"+content.map data-delayed-attr-delay="400|4000" style="visibility:hidden")
+        .winners__region-text !{content.mapT}
+      .winners__item-point.winners__item-date
+        .winners__date-icon
+          img(data-delayed-attr="src|"+content.date data-delayed-attr-delay="400|4000" style="visibility:hidden")
+        .winners__date-text !{content.dateT}
+
