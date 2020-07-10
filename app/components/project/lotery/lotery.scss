@@ -12,6 +12,7 @@
 
   &__bg {
     @include option(width, 2239);
+    height: 100%;
     position: absolute;
     top: 0;
     left: 50%;
@@ -154,8 +155,7 @@
   }
 
   &__button {
-    margin: 0 auto;
-    @include option(margin-top, 20);
+    @include option(margin, 20 auto 0);
     background: linear-gradient(90deg, #FF6717 0%, #FF5A57 100%);
   }
 

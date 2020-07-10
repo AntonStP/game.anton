@@ -11,6 +11,7 @@
 
   &__bg {
     @include option(width, 2239);
+    height: 100%;
     position: absolute;
     top: 0;
     left: 50%;
