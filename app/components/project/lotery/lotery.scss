@@ -7,6 +7,7 @@
   }
 
   position: relative;
+  z-index: 1;
   overflow-x: hidden;
 
   &__bg {
@@ -139,7 +140,7 @@
     }
   }
 
-  &__button {
+  &__timer-btn {
     @extend %CARD-TEXT;
     @include option(width, 191.78);
     @include option(height, 45.42);
@@ -152,5 +153,10 @@
     background: #7DD22B;
   }
 
+  &__button {
+    margin: 0 auto;
+    @include option(margin-top, 20);
+    background: linear-gradient(90deg, #FF6717 0%, #FF5A57 100%);
+  }
 
 }

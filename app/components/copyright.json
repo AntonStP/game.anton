@@ -430,8 +430,64 @@
           "text": "Купить"
         }
       }
-    ]
+    ],
+    "button": {
+      "text": "Купить билет",
+      "tag": "a",
+      "attr": {
+        "href": "#",
+        "data-mhref": "#",
+        "data-analytics": "",
+        "target": "_blank"
+      }
+    }
+  },
 
+  "statistic": {
+    "title": "Интересная статистика<br/> <span class='statistic__span'>за 10 лет</span>",
+    "list": [
+      {
+        "src": "images/statistic/point_1.svg",
+        "textB": "За&nbsp;10&nbsp;лет участники выиграли сумму, равную бюджету Сейшельских островов.",
+        "textN": "Или двух годовых бюджетов Ватикана.",
+        "attr": {
+          "class": "statistic__item-1"
+        }
+      },
+      {
+        "src": "images/statistic/point_2.svg",
+        "textB": "1223 лотерейных миллионера появилось за&nbsp;10&nbsp;лет.",
+        "textN": "Для каждого победителя выигрыш стал шагом к&nbsp;жизни, о&nbsp;которой он мечтал!",
+        "attr": {
+          "class": "statistic__item-2"
+        }
+      },
+      {
+        "src": "images/statistic/point_3.svg",
+        "textB": "Более 221 миллиона человек выиграли на&nbsp;сайте за&nbsp;10&nbsp;лет!",
+        "textN": "Если&nbsp;бы каждый совершеннолетний россиянин принял участие в лотереях,&nbspон&nbsp;мог&nbsp;бы выиграть 2&nbsp;раза. Пора и&nbsp;вам испытать удачу!",
+        "attr": {
+          "class": "statistic__item-3"
+        }
+      },
+      {
+        "src": "images/statistic/point_4.svg",
+        "textB": "Всеми купленными билетами, если&nbsp;бы они были бумажными, можно было&nbsp;бы&nbsp;проложить половину расстояния до&nbsp;Луны.",
+        "textN": "Или&nbsp;же разложить их&nbsp;5&nbsp;раз вокруг экватора!",
+        "attr": {
+          "class": "statistic__item-4"
+        }
+      },
+      {
+        "src": "images/statistic/point_5.svg",
+        "textB": "Сайт &laquo;Столото&raquo; сохранил 1731 тонну бумаги.",
+        "textN": "Столько&nbsp;же весят 42&nbsp;&laquo;Боинга-737&raquo;. Мы&nbsp;с&nbsp;вами спасли 34&nbsp;632 дерева.",
+        "attr": {
+          "class": "statistic__item-5"
+        }
+      }
+    ],
+    "src": "images/statistic/icon.svg"
   }
 
 }

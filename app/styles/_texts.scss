@@ -79,14 +79,14 @@
   color: $BLACK;
 }
 
-%STATISTIC-ITEM {
+%STATISTIC-ITEM-B {
   font-family: "robotobold";
   @include option(font-size, 16);
   line-height: 1.3;
   color: $BLACK;
 }
 
-%STATISTIC-ITEM-SPAN {
+%STATISTIC-ITEM-N {
   font-family: "robotoregular";
   @include option(font-size, 16);
   line-height: 1.3;
