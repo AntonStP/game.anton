@@ -7,10 +7,19 @@
   }
 
   position: relative;
+  overflow-x: hidden;
+
+  &__bg {
+    @include option(width, 2239);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: $z-parallax;
+  }
 
   &__parallax-item {
     position: absolute;
-    z-index: $z_parallax;
     img {
       height: 100%;
     }
@@ -20,49 +29,49 @@
     @include option(width, 77.91);
     @include option(height, 77.91);
     @include option(top, 356);
-    @include option(left, 335);
+    @include option(left, 454);
   }
 
   &__item-2 {
      @include option(width, 110);
      @include option(height, 110);
      @include option(top, 630);
-     @include option(left, 475);
+     @include option(left, 594);
   }
 
   &__item-3 {
     @include option(width, 145);
     @include option(height, 145);
     @include option(top, 548);
-    @include option(right, 630);
+    @include option(right, 794);
   }
 
   &__item-4 {
     @include option(width, 180);
     @include option(height, 190);
     @include option(top, -3);
-    @include option(right, 330);
+    @include option(right, 449);
   }
 
   &__item-5 {
     @include option(width, 111);
     @include option(height, 114);
     @include option(top, 351);
-    @include option(left, 951);
+    @include option(left, 1071);
   }
 
   &__item-6 {
     @include option(width, 82);
     @include option(height, 78);
     @include option(top, 318);
-    @include option(right, 634);
+    @include option(right, 754);
   }
 
   &__item-7 {
     @include option(width, 821);
     @include option(height, 806);
     @include option(top, -656);
-    @include option(left, 147);
+    @include option(left, 266);
     img {
       height: 100%;
     }
@@ -80,7 +89,7 @@
     @include option(height, 36.16);
     position: relative;
     display: block;
-    z-index: $z-parallax+1;
+    z-index: $z_parallax+1;
     img {
       height: 100%;
       display: block;
