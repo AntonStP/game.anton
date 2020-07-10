@@ -12,6 +12,8 @@ const PRESETS = {
     // watchSlidesProgress: true,
     // watchSlidesVisibility: true,
     slidesPerView: "auto",
+    centeredSlides: "true",
+    loop: "true",
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
