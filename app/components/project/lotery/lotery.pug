@@ -1,6 +1,7 @@
 mixin lotery(content, params)
   .lotery&attributes(attributes)
-    +pug-list(content.parallax, "lotery__parallax-item", params)
+    .lotery__bg
+      +pug-list(content.parallax, "lotery__parallax-item", params)
     .lotery__content
       +pug-list(content.list, "timer", params)
     block

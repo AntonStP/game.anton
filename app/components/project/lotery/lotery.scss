@@ -6,11 +6,51 @@
     }
   }
 
+  position: relative;
+  overflow-x: hidden;
+
+  &__bg {
+    @include option(width, 2239);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: $z-parallax;
+  }
+
   &__parallax-item {
     position: absolute;
     img {
       height: 100%;
     }
+  }
+
+  &__item-1 {
+    @include option(width, 119);
+    @include option(height, 119);
+    @include option(top, 248);
+    @include option(left, 425);
+  }
+
+  &__item-2 {
+    @include option(width, 54);
+    @include option(height, 54);
+    @include option(top, 310);
+    @include option(left, 596);
+  }
+
+  &__item-3 {
+    @include option(width, 59);
+    @include option(height, 59);
+    @include option(top, 155);
+    @include option(right, 518);
+  }
+
+  &__item-4 {
+    @include option(width, 187);
+    @include option(height, 196);
+    @include option(top, 235);
+    @include option(right, 395);
   }
 
   &__content {
