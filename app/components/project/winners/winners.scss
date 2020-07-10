@@ -1,0 +1,8 @@
+.winners {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("winners", $mod){
+      @content;
+    }
+  }
+}
