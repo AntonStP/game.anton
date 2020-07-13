@@ -1,7 +1,7 @@
 .button {
   @extend %BUTTON;
-  @include option(width, 265);
-  @include option(height, 60);
+  @include option(width, 265, 310);
+  @include option(height, 60, 65);
   display: flex;
   align-items: center;
   justify-content: center;

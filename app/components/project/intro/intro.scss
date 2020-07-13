@@ -7,7 +7,7 @@
   }
 
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &__bg {
     @include option(width, 2239);
@@ -29,8 +29,8 @@
   &__item-1 {
     @include option(width, 77.91);
     @include option(height, 77.91);
-    @include option(top, 356);
-    @include option(left, 454);
+    @include option(top, 356, 304);
+    @include option(left, 454, 909);
   }
 
   &__item-2 {
@@ -41,38 +41,38 @@
   }
 
   &__item-3 {
-    @include option(width, 145);
-    @include option(height, 145);
-    @include option(top, 549);
-    @include option(right, 749);
+    @include option(width, 145, 107);
+    @include option(height, 145, 100);
+    @include option(top, 549, 446);
+    @include option(right, 749, 921);
   }
 
   &__item-4 {
-    @include option(width, 180);
-    @include option(height, 190);
-    @include option(top, -3);
-    @include option(right, 449);
+    @include option(width, 180, 93);
+    @include option(height, 190, 98);
+    @include option(top, -3, 251);
+    @include option(right, 449, 882);
   }
 
   &__item-5 {
-    @include option(width, 111);
-    @include option(height, 114);
-    @include option(top, 351);
-    @include option(left, 1071);
+    @include option(width, 111, 101);
+    @include option(height, 114, 105);
+    @include option(top, 351, 380);
+    @include option(left, 1071, 953);
   }
 
   &__item-6 {
-    @include option(width, 82);
-    @include option(height, 78);
-    @include option(top, 318);
-    @include option(right, 754);
+    @include option(width, 82, 80);
+    @include option(height, 78, 74);
+    @include option(top, 318, 318);
+    @include option(right, 754, 960);
   }
 
   &__item-7 {
-    @include option(width, 821);
-    @include option(height, 806);
-    @include option(top, -656);
-    @include option(left, 266);
+    @include option(width, 821, 536);
+    @include option(height, 806, 526);
+    @include option(top, -656, -440);
+    @include option(left, 266, 744);
     img {
       height: 100%;
     }
@@ -80,7 +80,8 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 31 0 0 0);
+    @include option(padding, 31 0 0 0, 15 0 0 0);
+    box-sizing: border-box;
 
 
   }
@@ -99,23 +100,24 @@
 
   &__title {
     @extend %INTRO-TITLE;
-    @include option(margin, 163 0 53 0);
+    @include option(margin, 163 0 53 0, 35 0 338 0);
   }
 
   &__sum {
     @extend %INTRO-SUM;
+    white-space: nowrap;
   }
 
   &__button {
-    @include option(margin, 0 0 213 0);
+    @include option(margin, 0 0 213 0, 0 0 55 0);
   }
 
   &__mobile {
     position: absolute;
-    @include option(width, 377  );
-    @include option(height, 590);
-    @include option(top, 93);
-    @include option(right, 70);
+    @include option(width, 377, 270);
+    @include option(height, 590, 422);
+    @include option(top, 93, 232);
+    @include option(right, 70, 26);
     img {
       height: 100%;
       position: relative;
@@ -124,30 +126,44 @@
     &::after {
       content: '';
       position: absolute;
-      @include option(width, 448);
-      @include option(height, 448);
-      @include option(top, 88);
-      @include option(left, -19);
+      @include option(width, 448, 284);
+      @include option(height, 448, 293);
+      @include option(top, 88, 67);
+      @include option(left, -19, 7);
       background: url("../images/intro/circle_bg.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
   }
 
-  &__try {
+  &__tryD {
     @extend %INTRO-SUBTITLE;
     @include option(margin, 0 0 15 0);
     text-align: center;
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__tryM {
+    @extend %INTRO-SUBTITLE;
+    @include option(margin, 0 0 15 0);
+    text-align: left;
+    @include option(letter-spacing, 0.1);
+    display: none;
+    @include MOBILE {
+      display: block;
+    }
   }
 
   &__arrow {
-    @include option(width, 31);
-    @include option(height, 41);
+    @include option(width, 31, 32);
+    @include option(height, 41, 36);
     display: block;
     position: relative;
     margin: 0 auto;
     z-index: $z_button;
-    svg {
+    img {
       height: 100%;
     }
   }

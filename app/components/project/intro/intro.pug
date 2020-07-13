@@ -8,13 +8,14 @@ mixin intro(content, params)
       .intro__title !{content.title}
       +button(content.button).intro__button
       +intro__mobile(content.mobile)
-      .intro__try !{content.subtitle}
+      .intro__tryD !{content.subtitleD}
+      .intro__tryM !{content.subtitleM}
       +intro__arrow(content.arrow)
     block
 
 mixin intro__parallax-item(content, params)
   .intro__parallax-item&attributes(content.attr)&attributes(attributes)
-    picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px)"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
+    picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px);"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="300|1000" style="visibility:hidden" alt=content.alt)
 
 mixin intro__logo-cirle(content, params)
   .intro__parallax-item&attributes(content.attr)&attributes(attributes)

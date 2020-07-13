@@ -14,7 +14,7 @@
   position: fixed;
   @include option(top, 360);
   transform: translate(0, -50%);
-  @include option(right, 545);
+  @include option(right, 145);
   display: flex;
   align-items: center;
   justify-content: center;
