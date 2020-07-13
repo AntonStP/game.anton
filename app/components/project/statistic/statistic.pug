@@ -1,5 +1,5 @@
 mixin statistic(content, params)
-  .statistic&attributes(attributes)
+  .statistic&attributes(content.attr)&attributes(attributes)
     .statistic__bg
       +statistic__icon(content.src)
     .statistic__content

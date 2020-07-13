@@ -5,11 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   background: linear-gradient(90deg, #FFCD17 0%, #FD9346 29.69%, #FF5656 100%);
   background-size: (100%,100%);
   border-radius: 38px;
   text-decoration: none;
   transition: background .5s ease-in-out;
+  z-index: $z_button;
   @include HOVER() {
     &:hover {
       background-size: (200%,300%)

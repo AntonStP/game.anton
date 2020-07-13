@@ -43,8 +43,8 @@
   &__item-3 {
     @include option(width, 145);
     @include option(height, 145);
-    @include option(top, 548);
-    @include option(right, 794);
+    @include option(top, 549);
+    @include option(right, 749);
   }
 
   &__item-4 {
@@ -144,7 +144,9 @@
     @include option(width, 31);
     @include option(height, 41);
     display: block;
+    position: relative;
     margin: 0 auto;
+    z-index: $z_button;
     svg {
       height: 100%;
     }

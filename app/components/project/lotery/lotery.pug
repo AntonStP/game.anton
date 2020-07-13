@@ -1,5 +1,5 @@
 mixin lotery(content, params)
-  .lotery&attributes(attributes)
+  .lotery&attributes(content.attr)&attributes(attributes)
     .lotery__bg
       +pug-list(content.parallax, "lotery__parallax-item", params)
     .lotery__content

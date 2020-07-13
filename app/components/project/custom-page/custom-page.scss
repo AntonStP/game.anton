@@ -6,5 +6,10 @@
   height: 100%;
   overflow: hidden;
   background: #2C2C2C;
+  user-select: none;
   @extend %DEFAULT;
+  img,
+  svg {
+    pointer-events: none;
+  }
 }

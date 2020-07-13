@@ -1,7 +1,8 @@
 mixin winners(content, params)
-  .winners&attributes(attributes)
+  .winners&attributes(content.attr)&attributes(attributes)
     .winners__bg
       +pug-list(content.parallax, "winners__parallax-item", params)
+      +winners__parallax-circle(content.circle)
     .winners__content
       .winners__title !{content.title}
       +carousel(content.carouselItems, {mixin: "winners__carousel-item"}).winners__carousel
@@ -10,9 +11,16 @@ mixin winners(content, params)
       +button(content.button).winners__button
     block
 
+
 mixin winners__parallax-item(content, params)
   .winners__parallax-item&attributes(content.attr)&attributes(attributes)
     picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.srcM+".png;(max-width: 1023px)"+content.srcM+".webp;(max-width: 1023px)" data-delayed-attr-delay="400|4000" style="visibility:hidden" alt=content.alt)
+
+
+mixin winners__parallax-circle(content, params)
+  .winners__parallax-item&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="400|4000" style="visibility:hidden")
+
 
 mixin winners__carousel-item(content,params)
   .winners__carousel-item&attributes(attributes)

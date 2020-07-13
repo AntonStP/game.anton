@@ -19,6 +19,7 @@
 
   &__parallax-item {
     position: absolute;
+    z-index: $z-parallax;
     img {
       height: 100%;
     }
@@ -78,6 +79,13 @@
     @include option(right, 239);
     @include option(width, 40);
     @include option(height, 40);
+  }
+
+  &__parallax-circle {
+    @include option(top, 577);
+    @include option(right, -165);
+    @include option(width, 557);
+    @include option(height, 557);
   }
 
   &__content {

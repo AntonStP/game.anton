@@ -105,7 +105,7 @@
     "arrow": {
       "src": "images/intro/arrow.svg",
       "attr": {
-        "href": "#"
+        "href": "#lotery"
       }
     },
     "button": {
@@ -117,6 +117,9 @@
         "data-analytics": "",
         "target": "_blank"
       }
+    },
+    "attr": {
+      "id": "intro"
     }
   },
 
@@ -440,6 +443,9 @@
         "data-analytics": "",
         "target": "_blank"
       }
+    },
+    "attr": {
+      "id": "lotery"
     }
   },
 
@@ -487,7 +493,10 @@
         }
       }
     ],
-    "src": "images/statistic/icon.svg"
+    "src": "images/statistic/icon.svg",
+    "attr": {
+      "id": "statistic"
+    }
   },
 
   "winners": {
@@ -565,6 +574,13 @@
         }
       }
     ],
+    "circle": {
+      "src": "images/winners/circle.svg",
+      "attr": {
+        "class": " winners__parallax-circle",
+        "data-parallax": ""
+      }
+    },
     "title": "Наши победители",
     "carouselItems": [
       {
@@ -694,6 +710,9 @@
         "data-analytics": "",
         "target": "_blank"
       }
+    },
+    "attr": {
+      "id": "winners"
     }
   },
 

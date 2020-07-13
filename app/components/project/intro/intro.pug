@@ -1,5 +1,5 @@
 mixin intro(content, params)
-  .intro&attributes(attributes)
+  .intro&attributes(content.attr)&attributes(attributes)
     .intro__bg
       +pug-list(content.parallax, "intro__parallax-item", params)
       +intro__logo-cirle(content.circle)
