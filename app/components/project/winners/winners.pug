@@ -17,7 +17,8 @@ mixin winners__parallax-item(content, params)
 mixin winners__carousel-item(content,params)
   .winners__carousel-item&attributes(attributes)
     .winners__item-photo
-      picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.src+"-m.png;(max-width: 1023px)"+content.src+"-m.webp;(max-width: 1023px)" data-delayed-attr-delay="400|4000" style="visibility:hidden" alt=content.alt)
+      img(src=content.src+".png")
+      //picture(data-delayed-attr="src|"+content.src+".png;;"+content.src+".png;(min-width: 1024px);"+content.src+".webp;(min-width: 1024px);"+content.src+"-m.png;(max-width: 1023px)"+content.src+"-m.webp;(max-width: 1023px)" data-delayed-attr-delay="400|4000" style="visibility:hidden" alt=content.alt)
     .winners__item-family семья !{content.family}
     .winners__item-wins выиграла
     .winners__item-sum !{content.sum}
