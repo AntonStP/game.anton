@@ -60,7 +60,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-1",
-          "data-parallax": ""
+          "data-parallax": "21"
         }
       },
       {
@@ -69,7 +69,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-2",
-          "data-parallax": ""
+          "data-parallax": "32"
         }
       },
       {
@@ -78,7 +78,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-3",
-          "data-parallax": ""
+          "data-parallax": "45"
         }
       },
       {
@@ -87,7 +87,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-4",
-          "data-parallax": ""
+          "data-parallax": "46"
         }
       },
       {
@@ -96,7 +96,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-5",
-          "data-parallax": ""
+          "data-parallax": "50"
         }
       },
       {
@@ -105,7 +105,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "intro__item-6",
-          "data-parallax": ""
+          "data-parallax": "48"
         }
       }
     ],
@@ -114,7 +114,7 @@
       "alt": "parallax-item",
       "attr": {
         "class": "intro__item-7",
-        "data-parallax": ""
+        "data-parallax": "5"
       }
     },
     "logo": {
@@ -131,7 +131,8 @@
       "src": "images/intro/iphone",
       "alt": "mobile"
     },
-    "subtitle": "Попробуйте&nbsp;&mdash; цены от&nbsp;20&nbsp;рублей!",
+    "subtitleD": "Попробуйте&nbsp;&mdash; цены от&nbsp;20&nbsp;рублей!",
+    "subtitleM": "Попробуйте, пока цены снижены!",
     "arrow": {
       "src": "images/intro/arrow.svg",
       "attr": {
@@ -161,7 +162,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "lotery__item-1",
-          "data-parallax": ""
+          "data-parallax": "20"
         }
       },
       {
@@ -170,7 +171,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "lotery__item-2",
-          "data-parallax": ""
+          "data-parallax": "15"
         }
       },
       {
@@ -179,7 +180,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "lotery__item-3",
-          "data-parallax": ""
+          "data-parallax": "15"
         }
       },
       {
@@ -188,7 +189,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "lotery__item-4",
-          "data-parallax": ""
+          "data-parallax": "40"
         }
       }
     ],
@@ -523,7 +524,11 @@
         }
       }
     ],
-    "src": "images/statistic/icon.svg",
+    "icon": {
+      "attr": {
+        "data-parallax": "10"
+      }
+    },
     "attr": {
       "id": "statistic"
     }
@@ -537,7 +542,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-1",
-          "data-parallax": ""
+          "data-parallax": "35"
         }
       },
       {
@@ -546,7 +551,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-2",
-          "data-parallax": ""
+          "data-parallax": "25"
         }
       },
       {
@@ -555,7 +560,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-3",
-          "data-parallax": ""
+          "data-parallax": "20"
         }
       },
       {
@@ -564,7 +569,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-4",
-          "data-parallax": ""
+          "data-parallax": "10"
         }
       },
       {
@@ -573,7 +578,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-5",
-          "data-parallax": ""
+          "data-parallax": "50"
         }
       },
       {
@@ -582,7 +587,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-6",
-          "data-parallax": ""
+          "data-parallax": "33"
         }
       },
       {
@@ -591,7 +596,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-7",
-          "data-parallax": ""
+          "data-parallax": "30"
         }
       },
       {
@@ -600,7 +605,7 @@
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-8",
-          "data-parallax": ""
+          "data-parallax": "17"
         }
       }
     ],
@@ -608,7 +613,7 @@
       "src": "images/winners/circle.svg",
       "attr": {
         "class": " winners__parallax-circle",
-        "data-parallax": ""
+        "data-parallax": "7"
       }
     },
     "title": "Наши победители",

@@ -2,6 +2,7 @@ import './utils/touch-device/touch-device';
 import './utils/delayed-attr/delayed-attr';
 import './stoloto-api/stoloto-api';
 import './utils/inviewport/inviewport';
+import './parallax-container/parallax-container';
 
 // GUI
 import "./gui/gui";

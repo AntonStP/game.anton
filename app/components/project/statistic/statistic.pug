@@ -1,7 +1,8 @@
 mixin statistic(content, params)
   .statistic&attributes(content.attr)&attributes(attributes)
     .statistic__bg
-      +statistic__icon(content.src)
+      -console.log(content.icon.attr)
+      +statistic__icon(content.icon)
     .statistic__content
       .statistic__title !{content.title}
       .statistic__data
@@ -17,5 +18,5 @@ mixin statistic__item(content,params)
       .statistic__item-textN !{content.textN}
 
 mixin statistic__icon(content, params)
-  .statistic__icon
+  .statistic__icon&attributes(content.attr)&attributes(attributes)
     img(data-delayed-attr="src| images/statistic/icon.svg" data-delayed-attr-delay="500|3000" style="visibility:hidden" alt="statistic-pic")

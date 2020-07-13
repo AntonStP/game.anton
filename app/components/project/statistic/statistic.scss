@@ -98,7 +98,7 @@
     @include option(left, 550);
     @include option(width, 255);
     @include option(height, 255);
-    z-index: 1;
+    z-index: $z_parallax;
   }
 
 

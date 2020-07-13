@@ -1,0 +1,21 @@
+{
+  "author": "PC10\\v.zhigalov",
+  "package": "parallax-container",
+  "description": "parallax-container - описание",
+  "dependencies": {},
+  "status": {},
+  "#status": [
+    {
+      "id": "local",
+      "description": "используется только в этом приложении"
+    },
+    {
+      "id": "project",
+      "description": "может быть использованно в других приложениях этого проекта"
+    },
+    {
+      "id": "framework",
+      "description": "может быть использованно в других проектах"
+    }
+  ]
+}

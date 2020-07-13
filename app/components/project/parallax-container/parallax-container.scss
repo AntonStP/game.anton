@@ -1,0 +1,8 @@
+.parallax-container {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("parallax-container", $mod){
+      @content;
+    }
+  }
+}
