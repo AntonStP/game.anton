@@ -5,4 +5,80 @@
       @content;
     }
   }
+
+  position: relative;
+  background: $GREY-F;
+
+  &__content {
+    @include wrapper;
+    @include option(padding, 41 0 16 0);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    @include option(margin, 0 0 30 0);
+  }
+
+  &__logo {
+    @include option(width, 122);
+    @include option(height, 34);
+    img {
+      height: 100%;
+    }
+    transition: opacity .3s ease-in-out;
+    @include HOVER() {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__download {
+    display: flex;
+    justify-content: space-between;
+    @include option(width, 260);
+    @include option(margin, 0 0 0 74);
+  }
+
+  &__download-btn {
+    transition: opacity .3s ease-in-out;
+    @include HOVER() {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__appstore {
+    @include option(width, 119.66);
+    @include option(height, 40);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__android {
+    @include option(width, 133);
+    @include option(height, 40);
+    img {
+      height: 100%;
+    }
+  }
+
+  &__text {
+    @extend %FOOTER-TEXT;
+    text-align: justify;
+    a {
+      transition: opacity .3s ease-in-out;
+      @include HOVER() {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+  }
+
+
 }

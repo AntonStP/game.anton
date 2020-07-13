@@ -2,10 +2,22 @@ mixin footer(content, params)
   .footer&attributes(attributes)
     .footer__bg
     .footer__content
-      +footer__logo(content.logo)
+      .footer__header
+        +footer__logo(content.logo)
+        .footer__download
+          +pug-list(content.download, "footer__download-btn", params)
+        +social-block(content.social)
+      .footer__text !{content.text}
 
     block
 
 mixin footer__logo(content, params)
   a.footer__logo&attributes(content.attr)&attributes(attributes)
     img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="500|5000" style="visibility:hidden" alt=content.alt)
+
+mixin footer__download-btn(content, params)
+  a.footer__download-btn&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|" + content.src data-delayed-attr-delay="500|5000" style="visibility:hidden" alt=content.alt)
+
+
+
