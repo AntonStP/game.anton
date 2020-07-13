@@ -1,0 +1,11 @@
+mixin footer(content, params)
+  .footer&attributes(attributes)
+    .footer__bg
+    .footer__content
+      +footer__logo(content.logo)
+
+    block
+
+mixin footer__logo(content, params)
+  a.footer__logo&attributes(content.attr)&attributes(attributes)
+    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="500|5000" style="visibility:hidden" alt=content.alt)
