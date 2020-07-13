@@ -1,9 +1,8 @@
 {
   "og": {
-    "title": "<?= $share->title ?>",
-    "description": "<?= $share->description ?>",
-    "canonical_url": "<?= $share->canonical_url ?>",
-    "fb_app_id": "",
+    "title": "game.stoloto",
+    "description": "game.stoloto",
+    "canonical_url": "https://game.stoloto.ru",
     "image": {
       "default": {
         "val": "<?= $share->image ?>",
@@ -21,6 +20,37 @@
       "tw": "<?= $share->image['tw'] ?>"
     }
   },
+
+  "pagination": [
+    {
+      "attr": {
+        "class": "pagination__item_1 pagination__item_active",
+        "data-index": "01",
+        "href": "#intro"
+      }
+    },
+    {
+      "attr": {
+        "class": "pagination__item_2",
+        "data-index": "02",
+        "href": "#lotery"
+      }
+    },
+    {
+      "attr": {
+        "class": "pagination__item_3",
+        "data-index": "03",
+        "href": "#statistic"
+      }
+    },
+    {
+      "attr": {
+        "class": "pagination__item_4",
+        "data-index": "04",
+        "href": "#winners"
+      }
+    }
+  ],
 
   "intro": {
     "parallax": [
@@ -804,7 +834,14 @@
         }
       }
     ],
-    "text": "Фраза &laquo;Выигрывайте 15&nbsp;000&nbsp;000&nbsp;₽ каждые 15&nbsp;минут&raquo; указывает на&nbsp;проведение тиражей лотереи &laquo;ВГЛ 2&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;4) (&laquo;Топ-3&raquo;) каждые 15&nbsp;минут, кроме технических перерывов (время проведения технических перерывов смотрите на&nbsp;сайте <a href='stoloto.ru', data-mhref='m.stoloto.ru' target='_blank'>www.stoloto.ru</a>). &laquo;ВГЛ 1&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;4), &laquo;ВГЛ 2&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;4), &laquo;ВГЛ 3&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;2), &laquo;ВГЛ 4&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;5), &laquo;ВГЛ 5&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;6), &laquo;ВГТЛ-1&raquo;. Срок проведения лотерей&nbsp;&mdash; до&nbsp;31.12.2029. Информацию об&nbsp;организаторе лотерей, о&nbsp;правилах их&nbsp;проведения, о&nbsp;призовом фонде лотерей, о количестве призов или выигрышей, о&nbsp;сроках, месте и&nbsp;порядке получения призов или выигрышей можно узнать на&nbsp;сайте <a href='stoloto.ru', data-mhref='m.stoloto.ru' target='_blank'>www.stoloto.ru</a>. Выигрыши носят вероятностный характер. Лотерея не&nbsp;является способом заработка и&nbsp;источником дохода. АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;, ОГРН 1127746385095, адрес: 109316, Москва, Волгоградский пр-т, д.&nbsp;43, корп.&nbsp;3, этаж&nbsp;10, пом. XXV, ком. 13Б. Реклама.&nbsp;18+"
+    "text": "Фраза &laquo;Выигрывайте 15&nbsp;000&nbsp;000&nbsp;₽ каждые 15&nbsp;минут&raquo; указывает на&nbsp;проведение тиражей лотереи &laquo;ВГЛ 2&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;4) (&laquo;Топ-3&raquo;) каждые 15&nbsp;минут, кроме технических перерывов (время проведения технических перерывов смотрите на&nbsp;сайте <a href='stoloto.ru', data-mhref='m.stoloto.ru' target='_blank'>www.stoloto.ru</a>). &laquo;ВГЛ 1&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;4), &laquo;ВГЛ 2&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;4), &laquo;ВГЛ 3&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;2), &laquo;ВГЛ 4&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;5), &laquo;ВГЛ 5&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;6), &laquo;ВГТЛ-1&raquo;. Срок проведения лотерей&nbsp;&mdash; до&nbsp;31.12.2029. Информацию об&nbsp;организаторе лотерей, о&nbsp;правилах их&nbsp;проведения, о&nbsp;призовом фонде лотерей, о количестве призов или выигрышей, о&nbsp;сроках, месте и&nbsp;порядке получения призов или выигрышей можно узнать на&nbsp;сайте <a href='stoloto.ru', data-mhref='m.stoloto.ru' target='_blank'>www.stoloto.ru</a>. Выигрыши носят вероятностный характер. Лотерея не&nbsp;является способом заработка и&nbsp;источником дохода. АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;, ОГРН 1127746385095, адрес: 109316, Москва, Волгоградский пр-т, д.&nbsp;43, корп.&nbsp;3, этаж&nbsp;10, пом. XXV, ком. 13Б. Реклама.&nbsp;18+",
+    "attr": {
+      "data-inviewport": {
+        ">-0.1,<0.8": [
+          "t|ac|pagination_off|body;.pagination"
+        ]
+      }
+    }
   }
 
 }

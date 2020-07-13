@@ -1,0 +1,14 @@
+mixin inviewport(content, params)
+  .inviewport&attributes(attributes)
+    block
+
+
+mixin inviewport-switch-header-to-light(content, params)
+  -
+    var _data_inviewport = {
+      "<0.21": [
+          "trigger|addclass|custom-page_light|;.custom-page",
+        ]
+    }
+  .inviewport(data-inviewport=_data_inviewport)&attributes(attributes)
+  block

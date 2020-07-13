@@ -1,5 +1,5 @@
 mixin footer(content, params)
-  .footer&attributes(attributes)
+  .footer&attributes(content.attr)&attributes(attributes)
     .footer__bg
     .footer__content
       .footer__header

@@ -1,0 +1,17 @@
+mixin pagination(content, params)
+  .pagination&attributes(attributes)
+    +pagination__arrow.pagination__arrow_top.pagination__arrow_hidden
+    .pagination__index &mdash;&nbsp;
+      span 01
+    .pagination__list
+      +pug-list(content, "pagination__item")
+    +pagination__arrow.pagination__arrow_bottom
+
+
+mixin pagination__item(content, params)
+  a.pagination__item&attributes(assign(content.attr||{}, attributes||{}))
+
+mixin pagination__arrow(content, params)
+  .pagination__arrow&attributes(attributes)
+    include arrow.svg
+

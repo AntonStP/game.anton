@@ -5,6 +5,7 @@ prepend title
   -let title = projectDescription;
 
 block content
+
   .section
     +intro(copyright.intro)
   .section
@@ -13,6 +14,6 @@ block content
     +statistic(copyright.statistic)
   .section
     +winners(copyright.winners)
-  .section
-    +footer(copyright.footer)
+  +footer(copyright.footer)
+  +pagination(copyright.pagination)
 
