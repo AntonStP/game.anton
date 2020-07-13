@@ -57,26 +57,26 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 23 26 0);
+    @include option(padding, 23 26 0, 12 0 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   &__timer {
-    @include option(width, 260);
-    @include option(height, 403.76);
-    @include option(margin, 0 0 41 0);
+    @include option(width, 260, 150);
+    @include option(height, 403.76, 200);
+    @include option(margin, 0 0 41 0, 0 0 40 0);
   }
 
   &__timer-rapido {
     background: #D483E1;
     .timer__logo {
-      @include option(width, 189.39);
-      @include option(height, 61.38);
+      @include option(width, 189.39, 106);
+      @include option(height, 61.38, 34);
     }
     .timer__block {
-      @include option(padding, 48 0 0 0);
+      @include option(padding, 48 0 0 0, 30 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -84,11 +84,11 @@
   &__timer-rapido20 {
     background: #2D6875;
     .timer__logo {
-      @include option(width, 197.33);
-      @include option(height, 77.38);
+      @include option(width, 197.33, 125);
+      @include option(height, 77.38, 40);
     }
     .timer__block {
-      @include option(padding, 30 0 0 0);
+      @include option(padding, 30 0 0 0, 24 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -96,11 +96,11 @@
   &__timer-top3 {
     background: #6F2ED0;
     .timer__logo {
-      @include option(width, 148.97);
-      @include option(height, 69.65);
+      @include option(width, 148.97, 91);
+      @include option(height, 69.65, 42);
     }
     .timer__block {
-      @include option(padding, 38 0 0 0);
+      @include option(padding, 38 0 0 0, 24 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -108,11 +108,11 @@
   &__timer-12x24 {
     background: #1E7CFF;
     .timer__logo {
-      @include option(width, 121.68);
-      @include option(height, 45.07);
+      @include option(width, 121.68, 75);
+      @include option(height, 45.07, 34);
     }
     .timer__block {
-      @include option(padding, 54 0 0 0);
+      @include option(padding, 54 0 0 0, 29 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -120,11 +120,11 @@
   &__timer-duel {
     background: #00BCA8;
     .timer__logo {
-      @include option(width, 197.07);
-      @include option(height, 61.42);
+      @include option(width, 197.07, 122);
+      @include option(height, 61.42, 38);
     }
     .timer__block {
-      @include option(padding, 42 0 0 0);
+      @include option(padding, 42 0 0 0, 27 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -132,11 +132,11 @@
   &__timer-keno {
     background: #80DFFB;
     .timer__logo {
-      @include option(width, 138);
-      @include option(height, 71.56);
+      @include option(width, 138, 96);
+      @include option(height, 71.56, 50);
     }
     .timer__block {
-      @include option(padding, 30 0 0 0);
+      @include option(padding, 30 0 0 0, 20 0 0 0);
       box-sizing: border-box;
     }
   }
@@ -152,6 +152,9 @@
     align-items: center;
     font-family: 'robotoregular';
     background: #7DD22B;
+    @include MOBILE {
+      display: none;
+    }
   }
 
   &__button {
