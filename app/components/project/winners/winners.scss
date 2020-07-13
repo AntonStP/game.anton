@@ -90,13 +90,16 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 203 0 100 0);
+    @include option(padding, 203 0 100 0, 85 0 100 0);
   }
 
   &__title {
     @extend %WINNERS-TITLE;
     @include option(margin, 0 0 75 0);
     text-align: center;
+    @include MOBILE {
+      text-align: left;
+    }
   }
 
   .winners__carousel-btn {
@@ -112,6 +115,9 @@
       &:hover {
         cursor: pointer;
       }
+    }
+    @include MOBILE {
+      display: none;
     }
   }
 
@@ -132,6 +138,9 @@
       opacity: 1;
       z-index: 1;
       transform: scale(1.18) translate(0, 26%);
+      @include MOBILE {
+        transform: scale(1) translate(0,0);
+      }
     }
 
   }
@@ -140,8 +149,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include option(width, 235);
-    @include option(height, 330);
+    @include option(width, 235, 310);
+    @include option(height, 330, 435);
     @include option(padding, 24 0 0 0);
     box-sizing: border-box;
     background: #00BCA8;
@@ -173,8 +182,8 @@
 
   &__item-sum {
     @extend %WINNERS-SUM;
-    @include option(width, 222.76);
-    @include option(height, 43.84);
+    @include option(width, 222.76, 293);
+    @include option(height, 43.84, 57);
     @include option(margin, 9 0 18 0);
     @include option(padding, 5 0);
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(90.26deg, #FF6A29 0.07%, #ED3838 97.89%);
