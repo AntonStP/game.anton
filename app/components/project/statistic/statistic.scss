@@ -19,9 +19,9 @@
       content: '';
       position: absolute;
       display: block;
-      @include option(width, 1129);
-      @include option(height, 1129);
-      @include option(top, -203);
+      @include option(width, 1129, 1530);
+      @include option(height, 1129, 1530);
+      @include option(top, -203, -105);
       left: 50%;
       transform: translate(-50%,0);
       border-radius: 50%;
@@ -33,7 +33,7 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 65 0 0 0);
+    @include option(padding, 65 0 0 0, 45 0 0 0);
   }
 
   &__title {
@@ -44,17 +44,31 @@
     display: flex;
     flex-wrap: wrap;
     @include option(width, 920);
-    @include option(margin, 73 0 0 0);
-    @include option(padding, 0 0 0 7);
+    @include option(margin, 73 0 0 0, 33 0 0 0);
+    @include option(padding, 0 0 0 7, 0 0 0 0);
+    @include MOBILE {
+      flex-direction: column;
+    }
   }
 
   &__item {
     display: flex;
     align-items: flex-start;
-    @include option(width, 420);
-    @include option(height, 174);
-    @include option(margin, 0 38 0 0);
+    @include option(width, 420, 310);
+    @include option(height, 174, auto);
+    @include option(margin, 0 38 0 0, 0 0 35 0);
+    @include MOBILE {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
+  &__item-3 {
+    @include MOBILE {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__item-4 {
@@ -64,23 +78,34 @@
     .statistic__item-textN {
       @extend %STATISTIC-ITEM-B;
     }
+    @include MOBILE {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__item-5 {
     justify-self: flex-end;
-    @include option(margin, 0 0 0 458);
+    @include option(margin, 0 0 0 458, 0 0 0 0);
+    @include MOBILE {
+      justify-self: flex-start;
+      br {
+        display: none;
+      }
+    }
   }
 
   &__item-pic {
-    @include option(width, 82);
-    @include option(height, 82);
+    @include option(width, 82, 71);
+    @include option(height, 82, 71);
     img {
       height: 100%;
     }
   }
 
   &__text {
-    @include option(padding, 0 0 0 39);
+    @include option(padding, 0 0 0 39, 19 0 0 0);
   }
 
   &__item-textB {
