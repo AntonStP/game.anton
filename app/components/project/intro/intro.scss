@@ -7,7 +7,7 @@
   }
 
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &__bg {
     @include option(width, 2239);
@@ -140,6 +140,8 @@
     @extend %INTRO-SUBTITLE;
     @include option(margin, 0 0 15 0);
     text-align: center;
+    position: relative;
+    z-index: $z_parallax;
     @include MOBILE {
       display: none;
     }
@@ -151,6 +153,8 @@
     text-align: left;
     @include option(letter-spacing, 0.1);
     display: none;
+    position: relative;
+    z-index: $z_parallax;
     @include MOBILE {
       display: block;
     }

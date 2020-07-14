@@ -7,8 +7,6 @@
   }
 
   position: relative;
-  z-index: 1;
-  overflow-x: hidden;
 
   &__bg {
     @include option(width, 2239);
@@ -17,11 +15,25 @@
     top: 0;
     left: 50%;
     transform: translate(-50%,0);
-    z-index: $z-parallax;
+    //z-index: $z-parallax;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      @include option(top, -127, -150);
+      @include option(left, 0);
+      @include option(right, 0);
+      clear: both;
+      width: 100%;
+      @include option(height, 913);
+      border-radius: 50% / 33%;
+      background: linear-gradient(180.03deg, #232323 1.92%, rgba(28, 28, 28, 0) 97.75%);
+    }
   }
 
   &__parallax-item {
     position: absolute;
+    z-index: $z-parallax;
     img {
       height: 100%;
     }

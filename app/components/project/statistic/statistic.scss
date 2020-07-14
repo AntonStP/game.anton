@@ -124,6 +124,12 @@
     @include option(width, 255);
     @include option(height, 255);
     z-index: $z_parallax;
+    @include MOBILE {
+      display: none;
+    }
+    img {
+      height: 100%;
+    }
   }
 
 

@@ -33,10 +33,10 @@ mixin winners__carousel-item(content,params)
     .winners__data-wrapper
       .winners__item-point.winners__item-region
         .winners__region-icon
-          img(data-delayed-attr="src|"+content.map data-delayed-attr-delay="400|4000" style="visibility:hidden")
+          img(src=content.map alt="map-icon")
         .winners__region-text !{content.mapT}
       .winners__item-point.winners__item-date
         .winners__date-icon
-          img(data-delayed-attr="src|"+content.date data-delayed-attr-delay="400|4000" style="visibility:hidden")
+          img(src=content.date alt="date-icon")
         .winners__date-text !{content.dateT}
 

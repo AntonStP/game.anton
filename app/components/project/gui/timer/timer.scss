@@ -69,8 +69,8 @@
     position: absolute;
     @include option(top, 215, 150);
     @include option(left, -17, -11);
-    @include option(width, 226, 130);
-    @include option(height, 112, 67);
+    @include option(width, 226, 140);
+    @include option(height, 112, 71);
     transform-origin: 0% 0%;
     background: url("../images/lotery/label-full.png");
     background-repeat: no-repeat;
@@ -81,8 +81,8 @@
   &__label-prize {
     @extend %CARD-COST;
     position: absolute;
-    @include option(top, 59, 36);
-    @include option(left, 70, 37);
+    @include option(top, 59, 39);
+    @include option(left, 70, 43);
     transform: rotateZ(13.5deg);
     @include MOBILE {
       width: 70%;
