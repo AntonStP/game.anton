@@ -13,7 +13,7 @@ mixin footer(content, params)
 
 mixin footer__logo(content, params)
   a.footer__logo&attributes(content.attr)&attributes(attributes)
-    img(data-delayed-attr="src|"+content.src data-delayed-attr-delay="500|5000" style="visibility:hidden" alt=content.alt)
+    picture(data-delayed-attr="src|"+content.src+";;"+content.src+";(min-width: 1024px);"+content.srcM+";(max-width: 1023px)" data-delayed-attr-delay="500|5000" style="visibility:hidden" alt=content.alt)
 
 mixin footer__download-btn(content, params)
   a.footer__download-btn&attributes(content.attr)&attributes(attributes)

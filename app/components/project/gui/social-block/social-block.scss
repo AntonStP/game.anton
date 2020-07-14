@@ -16,18 +16,20 @@
     }
   }
 
+  order: 1;
+
   @include option(padding, 10 12 0 0);
 
   &__buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include option(width, 184);
+    @include option(width, 184, 310);
   }
 
   &__item {
-    @include option(width, 5);
-    @include option(height, 14);
+    @include option(width, 5, 18);
+    @include option(height, 14, 25);
     svg {
       display: block;
       height: 100%;

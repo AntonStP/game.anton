@@ -90,7 +90,7 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 203 0 100 0, 85 0 100 0);
+    @include option(padding, 203 0 100 0, 85 0 40 0);
   }
 
   &__title {

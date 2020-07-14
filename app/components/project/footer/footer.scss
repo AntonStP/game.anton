@@ -11,18 +11,21 @@
 
   &__content {
     @include wrapper;
-    @include option(padding, 41 0 16 0);
+    @include option(padding, 41 0 16 0, 41 0 13 0);
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    @include option(margin, 0 0 30 0);
+    @include option(margin, 0 0 30 0, 0 0 23 0);
+    @include MOBILE {
+      flex-direction: column;
+    }
   }
 
   &__logo {
-    @include option(width, 122);
-    @include option(height, 34);
+    @include option(width, 122, 143);
+    @include option(height, 34, 29.31);
     img {
       height: 100%;
     }
@@ -32,13 +35,19 @@
         opacity: 0.5;
       }
     }
+    @include MOBILE {
+      order: 3;
+    }
   }
 
   &__download {
     display: flex;
     justify-content: space-between;
-    @include option(width, 260);
-    @include option(margin, 0 0 0 74);
+    @include option(width, 260, 310);
+    @include option(margin, 0 0 0 74, 30 0 50 0);
+    @include MOBILE {
+      order: 2;
+    }
   }
 
   &__download-btn {
@@ -51,16 +60,16 @@
   }
 
   &__appstore {
-    @include option(width, 119.66);
-    @include option(height, 40);
+    @include option(width, 119.66, 143);
+    @include option(height, 40, 48);
     img {
       height: 100%;
     }
   }
 
   &__android {
-    @include option(width, 133);
-    @include option(height, 40);
+    @include option(width, 133, 159);
+    @include option(height, 40, 48);
     img {
       height: 100%;
     }
@@ -76,6 +85,10 @@
           opacity: 0.7;
         }
       }
+    }
+    @include MOBILE {
+      text-align: left;
+      line-height: 1.5;
     }
 
   }
