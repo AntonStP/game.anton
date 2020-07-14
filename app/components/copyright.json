@@ -464,11 +464,11 @@
           "hide": "@hide|keno|draw.date|days"
         },
         "attr": {
-          "id": "joker-buy-tickets",
+          "id": "keno-buy-tickets",
           "class": "lotery__timer lotery__timer-keno",
           "href": "https://www.stoloto.ru/quickgames/keno",
           "data-mhref": "https://www.stoloto.ru/quickgames/keno",
-          "data-analytics": "|||joker-buy-tickets-mob|mobile;|||joker-buy-tickets|desktop",
+          "data-analytics": "|||keno-buy-tickets-mob|mobile;|||keno-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {

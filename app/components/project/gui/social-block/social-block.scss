@@ -18,18 +18,23 @@
 
   order: 1;
 
-  @include option(padding, 10 12 0 0);
+  @include option(padding, 2 0 0 0);
 
   &__buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include option(width, 184, 310);
+    @include option(width, 202, 310);
   }
 
   &__item {
-    @include option(width, 5, 18);
-    @include option(height, 14, 25);
+    @include option(width, 20, 18);
+    @include option(height, 30, 25);
+    @include option(padding, 2);
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    box-sizing: border-box;
     svg {
       display: block;
       height: 100%;
