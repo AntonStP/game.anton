@@ -18,19 +18,19 @@
 
   order: 1;
 
-  @include option(padding, 2 0 0 0);
+  @include option(padding, 2 0 0 0, 13 0 0 0);
 
   &__buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include option(width, 202, 310);
+    @include option(width, 205, 310);
   }
 
   &__item {
-    @include option(width, 20, 18);
-    @include option(height, 30, 25);
-    @include option(padding, 2);
+    @include option(width, 28, 21);
+    @include option(height, 28, 21);
+    @include option(padding, 6, 1);
     display: flex;
     justify-content: center;
     flex: 0 0 auto;

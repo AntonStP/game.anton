@@ -17,7 +17,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    @include option(margin, 0 0 30 0, 0 0 23 0);
+    @include option(margin, 0 0 30 0, 0 0 21 0);
     @include MOBILE {
       flex-direction: column;
     }
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     @include option(width, 260, 310);
-    @include option(margin, 0 0 0 74, 30 0 50 0);
+    @include option(margin, 0 0 0 80, 32 0 50 0);
     @include MOBILE {
       order: 2;
     }
