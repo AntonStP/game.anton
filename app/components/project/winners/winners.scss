@@ -95,7 +95,7 @@
 
   &__title {
     @extend %WINNERS-TITLE;
-    @include option(margin, 0 0 75 0);
+    @include option(margin, 0 0 75 0, 0 0 32 0);
     text-align: center;
     @include MOBILE {
       text-align: left;
@@ -131,8 +131,8 @@
   }
 
   &__carousel {
-    @include option(width, 705);
-    @include option(height, 505);
+    @include option(width, 705, 310);
+    @include option(height, 505, 480);
 
     .swiper-slide-active {
       opacity: 1;
@@ -151,7 +151,7 @@
     align-items: center;
     @include option(width, 235, 310);
     @include option(height, 330, 435);
-    @include option(padding, 24 0 0 0);
+    @include option(padding, 24 0 0 0, 31 0 0 0);
     box-sizing: border-box;
     background: #00BCA8;
     background: linear-gradient(180deg, #D483E1 29.34%, #00BCA8 100%);
@@ -160,16 +160,17 @@
   }
 
   &__item-photo {
-    @include option(width, 104);
-    @include option(height, 102);
+    @include option(width, 104, 140);
+    @include option(height, 102, 140);
     img {
       height: 100%;
+      display: block;
     }
   }
 
   &__item-family {
     @extend %WINNERS-FAMILY;
-    @include option(margin, 14 0 3 0);
+    @include option(margin, 14 0 3 0, 14 0 1 0);
     @include option(letter-spacing, 0.8);
     text-transform: uppercase;
   }
@@ -184,10 +185,10 @@
     @extend %WINNERS-SUM;
     @include option(width, 222.76, 293);
     @include option(height, 43.84, 57);
-    @include option(margin, 9 0 18 0);
+    @include option(margin, 9 0 18 0, 13 0 26 0);
     @include option(padding, 5 0);
     background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(90.26deg, #FF6A29 0.07%, #ED3838 97.89%);
-    @include option(border-radius, 22 22 22 5);
+    @include option(border-radius, 22 22 22 5, 25 25 25 5);
     box-sizing: border-box;
     text-align: center;
   }
@@ -196,26 +197,54 @@
     @extend %WINNERS-ITEM;
     display: flex;
     align-items: center;
-    @include option(margin, 0 0 12 0);
+    @include option(margin, 0 0 12 0, 0 0 14 0);
 
   }
 
   &__region-icon {
-    @include option(width, 12.59);
-    @include option(height, 19.85);
+    @include option(width, 12.59, 21.61);
+    @include option(height, 19.85, 28.18);
     @include option(padding, 0 15 0 2);
 
     img {
       height: 100%;
+      display: block;
     }
   }
 
   &__date-icon {
-    @include option(width, 19.96);
-    @include option(height, 19.94);
+    @include option(width, 19.96, 28.16);
+    @include option(height, 19.94, 24.14);
     @include option(padding, 0 10 0 0);
     img {
      height: 100%;
+      display: block;
+    }
+  }
+
+  &__pagination {
+    display: none;
+    width: auto;
+    @include option(height, 11.22);
+    @include option(margin, -19 auto);
+    margin-top: -20px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 22;
+    .swiper-pagination-bullet {
+      @include option(width, 11.33);
+      @include option(height, 11.33);
+      border-radius: 50%;
+      border: 1px solid $PAGINATION-COLOR;
+      transition: background-color .4s ease-in-out;
+    }
+    .swiper-pagination-bullet-active {
+      @include option(width, 11.33);
+      @include option(height, 11.33);
+      background: $PAGINATION-COLOR;
+    }
+    @include MOBILE {
+      display: flex;
     }
   }
 

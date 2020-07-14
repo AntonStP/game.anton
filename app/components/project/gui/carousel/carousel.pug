@@ -7,4 +7,5 @@ mixin carousel(content, params)
   .carousel.swiper-container(class=mod('carousel', params && params.mod))&attributes(attributes)
     .swiper-wrapper
       +pug-list(content, 'carousel__item', params)
+    .swiper-pagination.winners__pagination
     block

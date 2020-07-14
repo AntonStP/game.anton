@@ -1,7 +1,6 @@
 mixin statistic(content, params)
   .statistic&attributes(content.attr)&attributes(attributes)
     .statistic__bg
-      -console.log(content.icon.attr)
       +statistic__icon(content.icon)
     .statistic__content
       .statistic__title !{content.title}
