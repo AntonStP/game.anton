@@ -40,6 +40,11 @@
     @extend %STATISTIC-TITLE;
   }
 
+  &__span {
+    color: #FFFFFF;
+    text-shadow: 0.05em 0.05em 0 #e5735a;
+  }
+
   &__data {
     display: flex;
     flex-wrap: wrap;
