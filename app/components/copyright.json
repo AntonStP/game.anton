@@ -2,10 +2,10 @@
   "og": {
     "title": "game.stoloto",
     "description": "game.stoloto",
-    "canonical_url": "https://game.stoloto.ru",
+    "canonical_url": "https://game.stolotoa.ru",
     "image": {
       "default": {
-        "val": "<?= $share->image ?>",
+        "val": "https://game.stolotoa.ru/images/share.jpg",
         "width": 1200,
         "height": 630
       }
