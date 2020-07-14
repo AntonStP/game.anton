@@ -1,1 +1,11 @@
 extends no-analytics
+
+block head_before
+  include components/project/analytics/gtm.html
+
+block body_before
+  include components/project/analytics/gtm-body.html
+  include components/project/analytics/gtm-ua.html
+  include components/project/analytics/ym.html
+  include components/project/analytics/hybrid.html
+

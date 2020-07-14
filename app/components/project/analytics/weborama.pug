@@ -1,0 +1,28 @@
+-
+  var linkVisitors = "https://stoloto.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=co&a.si=6464&a.cp=31&a.ct=d";
+  
+  var linkContext1 = "https://stoloto.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=co&a.si=6464&a.cp=49&a.ct=d&a.opt=%22N2%22:%22";
+  var linkContext2 = "%22";
+
+
+.analytics.analytics__pixel
+  if(!php)
+    .
+      <script>
+        (function(){
+        var params = window.location.search.substr(1);
+        // console.log('param',params,params.indexOf("utm_source="));
+        if( params.indexOf("utm_source=") != -1){
+          var img = new Image();
+          img.src = "!{linkContext1}"+params+"!{linkContext2}";
+          document.getElementsByClassName('analytics__pixel')[0].appendChild(img);
+        }
+        })();
+      </script>
+  if(php)
+    .
+      <?php if( isset($_GET['utm_source']) ): ?>
+      <img src="!{linkContext1}<?=urlencode($_SERVER['QUERY_STRING'])?>!{linkContext2}">
+      <?php endif; ?>
+
+  img(src=linkVisitors)
