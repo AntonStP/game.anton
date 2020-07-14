@@ -120,9 +120,9 @@
     "logo": {
       "src": "images/intro/logo.svg",
       "attr": {
-        "href": "#",
-        "data-mhref": "#",
-        "data-analytics": "",
+        "href": "https://stoloto.ru/",
+        "data-mhref": "https://m.stoloto.ru/",
+        "data-analytics": "|||logo-top",
         "target": "_blank"
       }
     },
@@ -143,10 +143,10 @@
       "text": "Купить билет",
       "tag": "a",
       "attr": {
-        "href": "#",
-        "data-mhref": "#",
-        "data-analytics": "",
-        "target": "_blank"
+        "id": "buy-tickets",
+        "class": "ALL - buy-tickets",
+        "href": "#lotery",
+        "data-analytics": "|||buy-tickets-mob|mobile;|||buy-tickets|desktop"
       }
     },
     "attr": {
@@ -230,9 +230,11 @@
           "hide": "@hide|rapido|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-rapido","href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "id": "rapido-buy-tickets",
+          "class": "lotery__timer lotery__timer-rapido",
+          "href": "https://www.stoloto.ru/quickgames/rapido",
+          "data-mhref": "https://m.stoloto.ru/quickgames/rapido",
+          "data-analytics": "|||rapido-buy-tickets-mob|mobile;|||rapido-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -275,9 +277,11 @@
           "hide": "@hide|rapido2|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-rapido20","href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "id": "rapido2-buy-tickets",
+          "class": "lotery__timer lotery__timer-rapido20",
+          "href": "https://www.stoloto.ru/quickgames/rapido2",
+          "data-mhref": "https://m.stoloto.ru/quickgames/rapido2",
+          "data-analytics": "|||rapido2-buy-tickets-mob|mobile;|||rapido2-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -319,9 +323,11 @@
           "hide": "@hide|top3|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-top3","href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "id": "top3-buy-tickets",
+          "class": "lotery__timer lotery__timer-top3",
+          "href": "https://www.stoloto.ru/quickgames/top3",
+          "data-mhref": "https://m.stoloto.ru/quickgames/top3",
+          "data-analytics": "|||top3-buy-tickets-mob|mobile;|||top3-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -364,9 +370,11 @@
           "hide": "@hide|12x24|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-12x24","href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "id": "12x24-buy-tickets",
+          "class": "lotery__timer lotery__timer-12x24",
+          "href": "https://www.stoloto.ru/quickgames/12x24",
+          "data-mhref": "https://m.stoloto.ru/quickgames/12x24",
+          "data-analytics": "|||12x24-buy-tickets-mob|mobile;|||12x24-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -409,9 +417,11 @@
           "hide": "@hide|duel|draw.date|days"
         },
         "attr": {
-          "class": "lotery__timer lotery__timer-duel","href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "id": "duel-buy-tickets",
+          "class": "lotery__timer lotery__timer-duel",
+          "href": "https://www.stoloto.ru/quickgames/duel",
+          "data-mhref": "https://m.stoloto.ru/quickgames/duel",
+          "data-analytics": "|||duel-buy-tickets-mob|mobile;|||duel-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -454,10 +464,11 @@
           "hide": "@hide|keno|draw.date|days"
         },
         "attr": {
+          "id": "joker-buy-tickets",
           "class": "lotery__timer lotery__timer-keno",
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.stoloto.ru/quickgames/keno",
+          "data-mhref": "https://www.stoloto.ru/quickgames/keno",
+          "data-analytics": "|||joker-buy-tickets-mob|mobile;|||joker-buy-tickets|desktop",
           "target": "_blank"
         },
         "button": {
@@ -469,9 +480,10 @@
       "text": "Купить билет",
       "tag": "a",
       "attr": {
-        "href": "#",
-        "data-mhref": "#",
-        "data-analytics": "",
+        "id": "buy-tickets-2",
+        "href": "https://www.stoloto.ru/packet/206",
+        "data-mhref": "https://m.stoloto.ru/packet/206",
+        "data-analytics": "|||buy-tickets-2-mob|mobile;|||buy-tickets-2|desktop",
         "target": "_blank"
       }
     },
@@ -740,9 +752,10 @@
       "text": "Стать следующим",
       "tag": "a",
       "attr": {
-        "href": "#",
-        "data-mhref": "#",
-        "data-analytics": "",
+        "id": "buy-tickets-3",
+        "href": "https://www.stoloto.ru/#fast",
+        "data-mhref": "https://m.stoloto.ru/#fast",
+        "data-analytics": "|||buy-tickets-3-mob|mobile;|||buy-tickets-3|desktop",
         "target": "_blank"
       }
     },
@@ -756,9 +769,9 @@
       "src": "images/footer/logo.svg",
       "srcM": "images/footer/logoM.svg",
       "attr": {
-        "href": "#",
-        "data-mhref": "#",
-        "data-analytics": "",
+        "href": "https://stoloto.ru/",
+        "data-mhref": "https://m.stoloto.ru/",
+        "data-analytics": "|||logo-footer",
         "target": "_blank"
       }
     },
@@ -767,9 +780,9 @@
         "src": "images/footer/appstore.svg",
         "attr": {
           "class": "footer__appstore",
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.stoloto.ru/mobile-applications?shortlink=763ab59f&c=dr_rl&pid=site",
+          "data-mhref": "https://m.stoloto.ru/mobile-applications?shortlink=763ab59f&c=dr_rl&pid=site",
+          "data-analytics": "|||download-ios|mobile;|||mob-app|desktop",
           "target": "_blank"
         }
       },
@@ -777,9 +790,9 @@
         "src": "images/footer/android.png",
         "attr": {
           "class": "footer__android",
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.stoloto.ru/mobile-applications?shortlink=763ab59f&c=dr_rl&pid=site",
+          "data-mhref": "https://m.stoloto.ru/mobile-applications?shortlink=763ab59f&c=dr_rl&pid=site",
+          "data-analytics": "|||download-android|mobile;|||mob-app|desktop",
           "target": "_blank"
         }
       }
@@ -788,54 +801,48 @@
       {
         "soc": "fb",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.facebook.com/stoloto.ru",
+          "data-analytics": "|||social-fb",
           "target": "_blank"
         }
       },
       {
         "soc": "vk",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://vk.com/stoloto",
+          "data-analytics": "|||social-vk",
           "target": "_blank"
         }
       },
       {
         "soc": "yt",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.youtube.com/c/stolototv?sub_confirmation=1",
+          "data-analytics": "|||social-yt",
           "target": "_blank"
         }
       },
       {
         "soc": "ok",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://ok.ru/stoloto",
+          "data-analytics": "|||social-ok",
           "target": "_blank"
         }
       },
       {
         "soc": "tw",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://twitter.com/stoloto",
+          "data-analytics": "|||social-tw",
           "target": "_blank"
         }
       },
       {
         "soc": "inst",
         "attr": {
-          "href": "#",
-          "data-mhref": "#",
-          "data-analytics": "",
+          "href": "https://www.instagram.com/stoloto/",
+          "data-analytics": "|||social-inst",
           "target": "_blank"
         }
       }

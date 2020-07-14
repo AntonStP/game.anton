@@ -250,6 +250,8 @@
 
   &__button {
     @include option(margin, 23 auto 0, 32 auto 0);
+    background: linear-gradient(270deg, #89FA58 0%, #C3FF38 100%);
+    color: #000000;
   }
 
 }
