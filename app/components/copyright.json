@@ -547,7 +547,7 @@
       },
       {
         "src": "images/winners/item_2",
-        "srcM": "images/winners/item_2",
+        "srcM": "images/1px",
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-2",
@@ -556,7 +556,7 @@
       },
       {
         "src": "images/winners/item_3",
-        "srcM": "images/winners/item_3",
+        "srcM": "images/1px",
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-3",
@@ -583,7 +583,7 @@
       },
       {
         "src": "images/winners/item_6",
-        "srcM": "images/winners/item_6",
+        "srcM": "images/1px",
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-6",
@@ -601,7 +601,7 @@
       },
       {
         "src": "images/winners/item_8",
-        "srcM": "images/winners/item_8",
+        "srcM": "images/1px",
         "alt": "parallax-item",
         "attr": {
           "class": "winners__item-8",

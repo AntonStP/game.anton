@@ -26,10 +26,10 @@
   }
 
   &__item-1 {
-    @include option(top, 440);
-    @include option(left, 183);
-    @include option(width, 98);
-    @include option(height, 98);
+    @include option(top, 440, 672);
+    @include option(left, 183, 935);
+    @include option(width, 98, 38.15);
+    @include option(height, 98, 39);
   }
 
   &__item-2 {
@@ -47,17 +47,17 @@
   }
 
   &__item-4 {
-    @include option(top, 746);
-    @include option(left, 840);
-    @include option(width, 41);
+    @include option(top, 746, 136);
+    @include option(left, 840, 1236);
+    @include option(width, 41, 39);
     @include option(height, 40);
   }
 
   &__item-5 {
-    @include option(top, 803);
-    @include option(right, 640);
-    @include option(width, 145);
-    @include option(height, 160);
+    @include option(top, 803, 650);
+    @include option(right, 640, 897);
+    @include option(width, 145, 90);
+    @include option(height, 160, 93);
   }
 
   &__item-6 {
@@ -68,8 +68,8 @@
   }
 
   &__item-7 {
-    @include option(top, 564);
-    @include option(right, 472);
+    @include option(top, 564, 51);
+    @include option(right, 472, 906);
     @include option(width, 76);
     @include option(height, 83);
   }
@@ -230,7 +230,7 @@
     margin-top: -20px;
     align-items: center;
     justify-content: space-between;
-    z-index: 22;
+    z-index: $z_parallax+1;
     .swiper-pagination-bullet {
       @include option(width, 11.33);
       @include option(height, 11.33);
@@ -249,7 +249,7 @@
   }
 
   &__button {
-    @include option(margin, 23 auto 0);
+    @include option(margin, 23 auto 0, 32 auto 0);
   }
 
 }
