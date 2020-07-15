@@ -232,8 +232,8 @@
         "attr": {
           "id": "rapido-buy-tickets",
           "class": "lotery__timer lotery__timer-rapido",
-          "href": "https://www.stoloto.ru/quickgames/rapido",
-          "data-mhref": "https://m.stoloto.ru/quickgames/rapido",
+          "href": "https://stoloto.ru/quickgames/rapido",
+          "data-mhref": "https://m.stoloto.ru/rapido/game",
           "data-analytics": "|||rapido-buy-tickets-mob|mobile;|||rapido-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -279,8 +279,8 @@
         "attr": {
           "id": "rapido2-buy-tickets",
           "class": "lotery__timer lotery__timer-rapido20",
-          "href": "https://www.stoloto.ru/quickgames/rapido2",
-          "data-mhref": "https://m.stoloto.ru/quickgames/rapido2",
+          "href": "https://stoloto.ru/quickgames/rapido2",
+          "data-mhref": "https://m.stoloto.ru/rapido2/game",
           "data-analytics": "|||rapido2-buy-tickets-mob|mobile;|||rapido2-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -325,8 +325,8 @@
         "attr": {
           "id": "top3-buy-tickets",
           "class": "lotery__timer lotery__timer-top3",
-          "href": "https://www.stoloto.ru/quickgames/top3",
-          "data-mhref": "https://m.stoloto.ru/quickgames/top3",
+          "href": "https://stoloto.ru/quickgames/top3",
+          "data-mhref": "https://m.stoloto.ru/top3/game",
           "data-analytics": "|||top3-buy-tickets-mob|mobile;|||top3-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -372,8 +372,8 @@
         "attr": {
           "id": "12x24-buy-tickets",
           "class": "lotery__timer lotery__timer-12x24",
-          "href": "https://www.stoloto.ru/quickgames/12x24",
-          "data-mhref": "https://m.stoloto.ru/quickgames/12x24",
+          "href": "https://stoloto.ru/quickgames/12x24",
+          "data-mhref": "https://m.stoloto.ru/12x24/game",
           "data-analytics": "|||12x24-buy-tickets-mob|mobile;|||12x24-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -419,8 +419,8 @@
         "attr": {
           "id": "duel-buy-tickets",
           "class": "lotery__timer lotery__timer-duel",
-          "href": "https://www.stoloto.ru/quickgames/duel",
-          "data-mhref": "https://m.stoloto.ru/quickgames/duel",
+          "href": "https://stoloto.ru/quickgames/duel",
+          "data-mhref": "https://m.stoloto.ru/duel/game",
           "data-analytics": "|||duel-buy-tickets-mob|mobile;|||duel-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -466,8 +466,8 @@
         "attr": {
           "id": "keno-buy-tickets",
           "class": "lotery__timer lotery__timer-keno",
-          "href": "https://www.stoloto.ru/quickgames/keno",
-          "data-mhref": "https://www.stoloto.ru/quickgames/keno",
+          "href": "https://stoloto.ru/quickgames/keno",
+          "data-mhref": "https://m.stoloto.ru/keno/game",
           "data-analytics": "|||keno-buy-tickets-mob|mobile;|||keno-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
@@ -482,8 +482,8 @@
       "attr": {
         "id": "buy-tickets-2",
         "class": "button_orange",
-        "href": "https://www.stoloto.ru/packet/206",
-        "data-mhref": "https://m.stoloto.ru/packet/206",
+        "href": "https://stoloto.ru/",
+        "data-mhref": "https://m.stoloto.ru",
         "data-analytics": "|||buy-tickets-2-mob|mobile;|||buy-tickets-2|desktop;_txq||track,buy_ticket",
         "target": "_blank"
       }
@@ -755,7 +755,7 @@
       "attr": {
         "id": "buy-tickets-3",
         "class": "button_green",
-        "href": "https://www.stoloto.ru/#fast",
+        "href": "https://stoloto.ru/#fast",
         "data-mhref": "https://m.stoloto.ru/#fast",
         "data-analytics": "|||buy-tickets-3-mob|mobile;|||buy-tickets-3|desktop;_txq||track,buy_stoloto",
         "target": "_blank"
