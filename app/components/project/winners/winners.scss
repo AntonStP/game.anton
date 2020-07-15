@@ -107,11 +107,12 @@
   .winners__carousel-btn {
     position: absolute;
     @include option(top, 505);
-    @include option(width, 11);
+    @include option(width, 30);
     @include option(height, 20);
     background: url("../images/winners/arrow.svg");
     background-repeat: no-repeat;
-    //background-size: cover;
+    background-position: center;
+    background-size: contain;
     z-index: 22;
     @include HOVER() {
       &:hover {
@@ -124,13 +125,11 @@
   }
 
   &__btn-prev {
-    @include option(left, 40);
-    @include option(padding, 6);
+    @include option(left, 31);
   }
 
   &__btn-next {
-    @include option(right, 40);
-    @include option(padding, 6);
+    @include option(right, 34);
     transform: rotateY(180deg);
   }
 

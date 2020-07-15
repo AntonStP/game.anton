@@ -20,6 +20,7 @@ const PRESETS = {
     },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     }
   },
   free_scroll: {

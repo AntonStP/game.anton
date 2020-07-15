@@ -7,7 +7,7 @@
   }
 
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &__bg {
     @include option(width, 2239);
