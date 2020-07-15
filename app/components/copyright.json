@@ -146,7 +146,7 @@
         "id": "buy-tickets",
         "class": "button_blink",
         "href": "#lotery",
-        "data-analytics": "|||buy-tickets-mob|mobile;|||buy-tickets|desktop"
+        "data-analytics": "|||buy-tickets-mob|mobile;|||buy-tickets|desktop;_txq||track,buy_ticket"
       }
     },
     "attr": {
@@ -234,7 +234,7 @@
           "class": "lotery__timer lotery__timer-rapido",
           "href": "https://www.stoloto.ru/quickgames/rapido",
           "data-mhref": "https://m.stoloto.ru/quickgames/rapido",
-          "data-analytics": "|||rapido-buy-tickets-mob|mobile;|||rapido-buy-tickets|desktop",
+          "data-analytics": "|||rapido-buy-tickets-mob|mobile;|||rapido-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -281,7 +281,7 @@
           "class": "lotery__timer lotery__timer-rapido20",
           "href": "https://www.stoloto.ru/quickgames/rapido2",
           "data-mhref": "https://m.stoloto.ru/quickgames/rapido2",
-          "data-analytics": "|||rapido2-buy-tickets-mob|mobile;|||rapido2-buy-tickets|desktop",
+          "data-analytics": "|||rapido2-buy-tickets-mob|mobile;|||rapido2-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -327,7 +327,7 @@
           "class": "lotery__timer lotery__timer-top3",
           "href": "https://www.stoloto.ru/quickgames/top3",
           "data-mhref": "https://m.stoloto.ru/quickgames/top3",
-          "data-analytics": "|||top3-buy-tickets-mob|mobile;|||top3-buy-tickets|desktop",
+          "data-analytics": "|||top3-buy-tickets-mob|mobile;|||top3-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -374,7 +374,7 @@
           "class": "lotery__timer lotery__timer-12x24",
           "href": "https://www.stoloto.ru/quickgames/12x24",
           "data-mhref": "https://m.stoloto.ru/quickgames/12x24",
-          "data-analytics": "|||12x24-buy-tickets-mob|mobile;|||12x24-buy-tickets|desktop",
+          "data-analytics": "|||12x24-buy-tickets-mob|mobile;|||12x24-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -421,7 +421,7 @@
           "class": "lotery__timer lotery__timer-duel",
           "href": "https://www.stoloto.ru/quickgames/duel",
           "data-mhref": "https://m.stoloto.ru/quickgames/duel",
-          "data-analytics": "|||duel-buy-tickets-mob|mobile;|||duel-buy-tickets|desktop",
+          "data-analytics": "|||duel-buy-tickets-mob|mobile;|||duel-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -468,7 +468,7 @@
           "class": "lotery__timer lotery__timer-keno",
           "href": "https://www.stoloto.ru/quickgames/keno",
           "data-mhref": "https://www.stoloto.ru/quickgames/keno",
-          "data-analytics": "|||keno-buy-tickets-mob|mobile;|||keno-buy-tickets|desktop",
+          "data-analytics": "|||keno-buy-tickets-mob|mobile;|||keno-buy-tickets|desktop;_txq||track,buy_stoloto",
           "target": "_blank"
         },
         "button": {
@@ -477,14 +477,14 @@
       }
     ],
     "button": {
-      "text": "Купить билет",
+      "text": "Купить все за 380 ₽",
       "tag": "a",
       "attr": {
         "id": "buy-tickets-2",
         "class": "button_orange",
         "href": "https://www.stoloto.ru/packet/206",
         "data-mhref": "https://m.stoloto.ru/packet/206",
-        "data-analytics": "|||buy-tickets-2-mob|mobile;|||buy-tickets-2|desktop",
+        "data-analytics": "|||buy-tickets-2-mob|mobile;|||buy-tickets-2|desktop;_txq||track,buy_ticket",
         "target": "_blank"
       }
     },
@@ -757,7 +757,7 @@
         "class": "button_green",
         "href": "https://www.stoloto.ru/#fast",
         "data-mhref": "https://m.stoloto.ru/#fast",
-        "data-analytics": "|||buy-tickets-3-mob|mobile;|||buy-tickets-3|desktop",
+        "data-analytics": "|||buy-tickets-3-mob|mobile;|||buy-tickets-3|desktop;_txq||track,buy_stoloto",
         "target": "_blank"
       }
     },
