@@ -6,18 +6,17 @@ import {
 import $ from "jquery";
 import onScreen from "../../utils/on-screen";
 
-class Pagination extends Plugin {
+class Pagination  {
   // eslint-disable-next-line no-useless-constructor
   constructor($element) {
-    super($element);
 
-    const $html = $('html');
+    const $html = $('html, body');
 
     const $items = $element.find(".pagination__item");
 
     const $number = $element.find(".pagination__index").find("span");
 
-    const $sections =  $element.closest(".custom-page").find(".section");
+    const $sections =  $element.parent().find(".section");
 
     const $window = $(window);
 
@@ -38,16 +37,18 @@ class Pagination extends Plugin {
     function select(index, noAnimation){
       if (index < 0 || index >= $items.length) return;
       current = index;
+
       // меняем номер текущего раздела
       $number.text(addZeroIfNeeded(index+1));
       const $current = $items.eq(index);
       const dest = $current.attr('href');
       if (!noAnimation){
-        if(dest !== undefined && dest !== '')
+        if(dest !== undefined && dest !== ''){
           $html.animate({
               scrollTop: $(dest).offset().top
             }, 500
           );
+        }
       }
       // передача текущего index
       $element.find('.pagination__index span').html($element.attr('data-index'));
@@ -60,6 +61,8 @@ class Pagination extends Plugin {
       $arrowTop.toggleClass('pagination__arrow_hidden', index === 0);
       $arrowBottom.toggleClass('pagination__arrow_hidden', index === $items.length - 1);
     }
+
+    checkPosition();
 
     function checkPosition(){
       const scroll = $window.scrollTop();
