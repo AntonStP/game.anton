@@ -91,11 +91,13 @@
   &__content {
     @include wrapper;
     @include option(padding, 203 0 100 0, 85 0 40 0);
+    @include option(width, $WRAPPER-D, 375);
   }
 
   &__title {
     @extend %WINNERS-TITLE;
-    @include option(margin, 0 0 75 0, 0 0 32 0);
+    @include option(width, auto, 310);
+    @include option(margin, 0 0 75 0, 0 auto 32);
     text-align: center;
     @include MOBILE {
       text-align: left;
@@ -131,7 +133,7 @@
   }
 
   &__carousel {
-    @include option(width, 705, 310);
+    @include option(width, 705, 375);
     @include option(height, 505, 480);
 
     .swiper-slide-active {
@@ -152,6 +154,7 @@
     @include option(width, 235, 310);
     @include option(height, 330, 435);
     @include option(padding, 24 0 0 0, 31 0 0 0);
+    @include option(margin, 0, 0 50);
     box-sizing: border-box;
     background: #00BCA8;
     background: linear-gradient(180deg, #D483E1 29.34%, #00BCA8 100%);
@@ -224,7 +227,7 @@
 
   &__pagination {
     display: none;
-    width: auto;
+    @include option(width, 310);
     @include option(height, 11.22);
     @include option(margin, -19 auto);
     margin-top: -20px;
