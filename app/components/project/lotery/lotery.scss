@@ -79,6 +79,7 @@
     @include option(width, 260, 150);
     @include option(height, 403.76, 200);
     @include option(margin, 0 0 41 0, 0 0 40 0);
+    @include option(border-radius, 3.84, 2.36);
   }
 
   &__timer-rapido {
