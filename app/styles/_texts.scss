@@ -39,7 +39,7 @@
 
 %CARD-TEXT {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 18.1, 11);
   line-height: 1.2;
   color: $WHITE;
@@ -47,7 +47,7 @@
 
 %CARD-SUM {
   font-family: $MAIN-FONT;
-  font-weight: medium;
+  font-weight: 600;
   @include option(font-size, 29.7, 19);
   line-height: 1;
   color: $WHITE;
@@ -55,7 +55,7 @@
 
 %CARD-TIME-T {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 16.1, 11);
   line-height: 1.2;
   color: $WHITE;
@@ -63,7 +63,7 @@
 
 %CARD-TIME {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 27, 16);
   line-height: 1.2;
   color: $WHITE;
@@ -71,7 +71,7 @@
 
 %CARD-COST {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 17.4, 11);
   line-height: 1.1;
   color: $WHITE;
@@ -98,7 +98,7 @@
 
 %STATISTIC-ITEM-N {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 16, 15.8);
   line-height: 1.3;
   color: $BLACK;
@@ -130,7 +130,7 @@
 
 %WINNERS-W {
   font-family: $MAIN-FONT;
-  font-weight: medium;
+  font-weight: 600;
   @include option(font-size, 10.7, 14.1);
   line-height: 1.45;
   color: $WHITE;
@@ -145,7 +145,7 @@
 }
 %WINNERS-ITEM {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 10.7, 14.1);
   line-height: 1.2;
   color: $WHITE;
@@ -153,7 +153,7 @@
 
 %FOOTER-TEXT {
   font-family: $MAIN-FONT;
-  font-weight: regular;
+  font-weight: normal;
   @include option(font-size, 10, 14);
   line-height: 1.3;
   color: $WHITE;

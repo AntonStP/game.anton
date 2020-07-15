@@ -12,7 +12,7 @@
   src: url('roboto-medium-webfont.ttf') format('ttf'),
   url('roboto-medium-webfont.woff2') format('woff2'),
   url('roboto-medium-webfont.woff') format('woff');
-  font-weight: medium;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -21,6 +21,6 @@
   src: url('roboto-regular-webfont.ttf') format('ttf'),
   url('roboto-regular-webfont.woff2') format('woff2'),
   url('roboto-regular-webfont.woff') format('woff');
-  font-weight: regular;
+  font-weight: normal;
   font-style: normal;
 }
