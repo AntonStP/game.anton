@@ -102,10 +102,11 @@
   }
 
   &__item-pic {
-    @include option(width, 82, 71);
-    @include option(height, 82, 71);
+    //@include option(width, 82, 72);
+    @include option(height, 82, 72);
     img {
       height: 100%;
+      display: block;
     }
   }
 

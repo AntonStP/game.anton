@@ -28,6 +28,11 @@
   &_green {
     background: linear-gradient(270deg, #89FA58 0%, #C3FF38 100%);
     color: #000000;
+    @include HOVER() {
+      &:hover {
+        background-size: (500%, 200%);
+      }
+    }
   }
 
 
