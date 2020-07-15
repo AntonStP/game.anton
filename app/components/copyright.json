@@ -144,7 +144,7 @@
       "tag": "a",
       "attr": {
         "id": "buy-tickets",
-        "class": "ALL - buy-tickets",
+        "class": "button_blink",
         "href": "#lotery",
         "data-analytics": "|||buy-tickets-mob|mobile;|||buy-tickets|desktop"
       }
@@ -481,6 +481,7 @@
       "tag": "a",
       "attr": {
         "id": "buy-tickets-2",
+        "class": "button_orange",
         "href": "https://www.stoloto.ru/packet/206",
         "data-mhref": "https://m.stoloto.ru/packet/206",
         "data-analytics": "|||buy-tickets-2-mob|mobile;|||buy-tickets-2|desktop",
@@ -753,6 +754,7 @@
       "tag": "a",
       "attr": {
         "id": "buy-tickets-3",
+        "class": "button_green",
         "href": "https://www.stoloto.ru/#fast",
         "data-mhref": "https://m.stoloto.ru/#fast",
         "data-analytics": "|||buy-tickets-3-mob|mobile;|||buy-tickets-3|desktop",

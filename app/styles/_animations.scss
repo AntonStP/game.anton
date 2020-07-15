@@ -38,6 +38,29 @@
   }
 }
 
+@keyframes btn-blink {
+  0% {
+    background-size: (250%,100%);
+  }
+
+  10% {
+    background-size: (100%,100%);
+  }
+
+  66% {
+     background-size: (400%,100%);
+  }
+
+  86% {
+    background-size: (450%,100%);
+  }
+
+  100% {
+    background-size: (600%,100%);
+  }
+}
+
+
 //%SHAKE {
 //  @include shake-animation(SCALE-SHAKE, .025, 1, 1.0s);
 //}

@@ -6,15 +6,31 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(90deg, #FFCD17 0%, #FD9346 29.69%, #FF5656 100%);
   background-size: (100%,100%);
   border-radius: 38px;
   text-decoration: none;
-  transition: background .5s ease-in-out;
   z-index: $z_button;
-  @include HOVER() {
-    &:hover {
-      background-size: (200%,300%)
+
+  &_blink {
+    background: linear-gradient(90deg, #FFCD17 0%, #FD9346 29.69%, #FF5656 100%);
+    animation: btn-blink .8s ease-in-out  reverse infinite;
+  }
+
+  &_orange {
+    background: linear-gradient(90deg, #FF6717 0%, #FF5A57 100%);
+    @include HOVER() {
+      &:hover {
+        background-size: (500%, 200%);
+      }
     }
   }
+
+  &_green {
+    background: linear-gradient(270deg, #89FA58 0%, #C3FF38 100%);
+    color: #000000;
+  }
+
+
 }
+
+

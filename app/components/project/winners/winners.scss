@@ -236,6 +236,7 @@
       @include option(height, 11.33);
       border-radius: 50%;
       border: 1px solid $PAGINATION-COLOR;
+      box-sizing: border-box;
       transition: background-color .4s ease-in-out;
     }
     .swiper-pagination-bullet-active {
@@ -250,8 +251,6 @@
 
   &__button {
     @include option(margin, 23 auto 0, 32 auto 0);
-    background: linear-gradient(270deg, #89FA58 0%, #C3FF38 100%);
-    color: #000000;
   }
 
 }
