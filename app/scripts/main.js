@@ -2,6 +2,7 @@ import '../components/project/project';
 import {mobileLinksManager} from "../components/project/utils/mobileLinksManager";
 import {fixLinks, getBaseUrlParams} from "../components/project/utils/url";
 import StolotoApi from '../components/project/stoloto-api/StolotoApi';
+import {anchorSmoothScroll} from "../components/project/utils/anchorSmoothScroll";
 
 import $ from 'jquery';
 
@@ -23,6 +24,8 @@ function onDocumentReady() {
       fixLinks( "m.stoloto.ru" );
       fixLinks( "stoloto.ru", true );
     }, 600 );
+
+    anchorSmoothScroll();
   }
   $(document.documentElement).trigger("document:ready");
 }
