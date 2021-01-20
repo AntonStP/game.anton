@@ -142,7 +142,7 @@
   "dependencies": {
     "cloud9carousel": "^2.2.0",
     "flickity": "latest",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "handlebars": "^4.7.3",
     "ismobilejs": "^0.5.1",
     "jquery": "^3.4.0",
