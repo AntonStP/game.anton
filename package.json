@@ -148,7 +148,7 @@
     "jquery": "^3.4.0",
     "navigo": "latest",
     "normalize.css": "latest",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "tingle.js": "latest"
   }
 }
